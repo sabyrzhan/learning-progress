@@ -8,3 +8,19 @@
 - `whale` - huge player who has huge amount of capital. They are called market movers due to their capital.
 - `pump and dump` - spike and crash. The movement is used to create `FOMO` so they can sell the coins at higher price and then dump.
 - `shill` - The act of unsolicited endorsing of the coin in public. Traders who bought a coin has an interest in shilling the coin, in hopes of igniting the public’s interest in that particular coin.
+- `Margin Trading` - the same as getting loan for trading. A term for ‘trading with leverage’. In this instance of trading, you borrow one side of the trading pair at an agreed loan rate and sell it for the other side of the trading pair. Depending on the direction you believe the market to move, you may place a long or a short bet on the trading pair of concern.
+- `Long` - keeping position for long time
+- `Short` - keeping position for short time
+- `limit order` - order set with future price. It is executed when the target price is hit.
+- `borrowing rate` - When you open a leveraged position, you will be borrowing coins at a pre-determined rate. This rate will be added to reflect your position’s overall profit and loss.
+- `lending rate` - Some exchanges have lending accounts. You may deposit your coins into these lending accounts to lend your coins for others to execute their leveraged trades. The lending rate fluctuates throughout the day based on the demand for shorting the coin.
+- `fill or kill` - A limit order that will not execute unless an opposite order exceeds this limit order’s amount.
+- `BUY | SELL Wall.` - A wall as seen in the depth chart of exchanges is an amalgamation of limit orders of the same price target.
+- `Altcoin` - other coints different than BTC.
+- `circulating supply` - coin amount circulating for usage. If multiplied by coin price, gives `market cap`.
+- `market cap` - coin dominance in crypto market.
+- `ICO` - Initial Coin Offering on exchanges - the same as IPO.
+- `arbitrage` - act of buying and selling on different exchanges to earn the difference in the spread.
+- `BTFD` - Buy the Fucking Dip - when FOMO, it is time to buy.
+- `moon` - extreme bullish of a coin
+- `weak hands` - those who are not patient and sell at loss when market is down.
