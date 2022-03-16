@@ -53,13 +53,20 @@ A:<br>
 A:<br>
 10 * 26 * 26 * 3! = 40560
 
-**Q: How many different words can be formed from the letters of the word COMPLIANCE when:<br>**
+**Q: How many different words can be formed from the letters of the word BINOCULARS when:<br>**
 **- all the letters are taken**<br>
-**- the letter 'G' always occupy the 1st place**<br>
-**- letter 'P' and 'E' should occupy 1st and last place respectively**<br>
+**- the letter 'C' always occupy the 1st place**<br>
+**- letter 'N' and 'A' should occupy 1st and last place respectively**<br>
 
 A:<br>
 1) All 10 letters are unique: 10! = 1 * 2 * 3 * 4 * 5 * 6 * 7 * 8 * 9 * 10 = 3 628 800
 2) 1 * 9! = 362 880
 3) 1 * 8! * 1 = 40 320
 
+**Q: How many different words can be formed from the letters of the word BINOCULARS when:<br>**
+**- all the vowels are always together**<br>
+**- how many word of 5-letters each can be formed each containing 3-consonants and 2-vowels**<br>
+
+A:<br>
+1) Here we count 4 vowels as 1 unit: B(1)N(2)C(3)L(4)R(5)S(6)(IOUA)(7) = 7!(all letters) * 4!(vowels arrangement) = 120 960
+2) 6C3 * 4C2 * 5! = (6!/3! * (6-3)!) * (4!/2! * (4-2)!) * 120 = 1440
