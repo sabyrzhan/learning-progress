@@ -3,3 +3,4 @@
 - Finance
   - [Crypto](finance/crypto.md)
 - [K8s](k8s.md)
+- [Math] (math.md)
