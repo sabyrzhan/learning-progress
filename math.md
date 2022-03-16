@@ -4,6 +4,8 @@
 2. Arrangement = Permutation
 3. OR -> "+" (addition)
 4. AND -> "*" (multiplication)
+5. Combination: nCr = n!/r!(n-r)! (n - total items, r - selection)
+6. Permutation: nPr = n!(n-r)! = nCr * r!
 
 Examples:<br>
 **Q: Form a 3-digit number from 1,2,3,4, such that repetition of any number is allowed. How many cases of 3-digit numbers can be formed?<br>**
@@ -60,6 +62,4 @@ A:<br>
 1) All 10 letters are unique: 10! = 1 * 2 * 3 * 4 * 5 * 6 * 7 * 8 * 9 * 10 = 3 628 800
 2) 1 * 9! = 362 880
 3) 1 * 8! * 1 = 40 320
-
-
 
