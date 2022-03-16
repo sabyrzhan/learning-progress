@@ -51,4 +51,15 @@ A:<br>
 A:<br>
 10 * 26 * 26 * 3! = 40560
 
+**Q: How many different words can be formed from the letters of the word COMPLIANCE when:<br>**
+**- all the letters are taken**<br>
+**- the letter 'G' always occupy the 1st place**<br>
+**- letter 'P' and 'E' should occupy 1st and last place respectively**<br>
+
+A:<br>
+1) All 10 letters are unique: 10! = 1 * 2 * 3 * 4 * 5 * 6 * 7 * 8 * 9 * 10 = 3 628 800
+2) 1 * 9! = 362 880
+3) 1 * 8! * 1 = 40 320
+
+
 
