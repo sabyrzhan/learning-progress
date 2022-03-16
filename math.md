@@ -10,7 +10,7 @@ Examples:<br>
 A: 4(from 1-4) * 4(from 1-4) * 4(from 1-4) = 4^3=64
 
 **Q: Form a 3-digit number from 1,2,3,4, such that no repetition of any number is allowed.<br>**
-A: 2(from 1-4 but exluding 2 digits) * 3(from 1-4 but exluding 1 digit) * 4(from 1-4) = 2 * 3 * 4=24
+A: 2(one of 1-4) * 3(one of 1-4) * 4(one of 1-4) = 2 * 3 * 4=24
 
 **Q: Form a 3-digit number from 1,2,3,4,5 such that 1) no repetition of any number is allowed 2) repetition is allowed<br>**
 A:
@@ -20,19 +20,35 @@ A:
 **Q: Form a 3-digit number from 0,3,4,5,1, such that 1) no repetition 2) repitition of any number is allowed.<br>**
 A:
 1. 4(3,5,4,1) * 5(0,3,4,5,1) * 5(0,3,4,5,1) = 100
-2. 4(3,5,4,1) * 4(3,5,4,1) * 3(5,4,1) = 48
+2. 4(3,5,4,1) * 4(3,5,4,1) * 3(3,5,4,1) = 48
 
 **Q: Form a 3-digit number from 1,2,3,4,5, such that 5 should come once or twice.<br>**
 A:<br>
-*Once:*
+*Once:<br>*
 4(1,2,3,4) * 4(1,2,3,4) * 1(5) = 16<br>
 4(1,2,3,4) * 1(5) * 4(1,2,3,4) = 16<br>
 1(5) * 4(1,2,3,4) * 4(1,2,3,4) = 16<br>
 16 + 16 + 16 = 48
 
-*Twice:*
+*Twice:<br>*
 4(1,2,3,4) * 1(5) * 1(5) = 4<br>
 1(5) * 1(5) * 4(1,2,3,4) = 4<br>
 1(5) * 4(1,2,3,4) * 1(5) = 4<br>
 4 + 4 + 4 = 12
+
+**Q: Form a 4-digit number from 1,2,3..9, such that the number cannot start from 0 and no repetition allowed.<br>**
+A:<br>
+9(one of 1-9) * 9(one of 0-9) * 8(one of 0-9) * 7(one of 0-9) = 4528
+
+**Q: Generate 3-letter password from uppercase letters(ABC), lowercase letters(abc) and 0-9 numbers.<br>**
+A:<br>
+(3(ABC) * 3(abc) * 3(0-9)) * 3!(arrangements) = 3 * 3 * 3 * 3 * 2 * 1 = 162
+
+**Q: Generate 3-letter password with following conditions<br>**
+**- one numeral from 0-9**
+**- one uppercase english alphabet**
+**- one lowercase english alphabet**
+A:<br>
+10 * 26 * 26 * 3! = 40560
+
 
