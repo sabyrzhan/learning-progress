@@ -45,9 +45,9 @@ A:<br>
 (3(ABC) * 3(abc) * 3(0-9)) * 3!(arrangements) = 3 * 3 * 3 * 3 * 2 * 1 = 162
 
 **Q: Generate 3-letter password with following conditions<br>**
-**- one numeral from 0-9**
-**- one uppercase english alphabet**
-**- one lowercase english alphabet**
+**- one numeral from 0-9**<br>
+**- one uppercase english alphabet**<br>
+**- one lowercase english alphabet**<br>
 A:<br>
 10 * 26 * 26 * 3! = 40560
 
