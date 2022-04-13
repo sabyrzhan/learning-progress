@@ -17,4 +17,4 @@
     2. `sudo ufw allow 53/tcp from <IP address>` - allow TCP connections only specified ip address
     3. `sudo ufw deny from <IP_address> to any` - deny any connection from IP address only
     4. `sudo ufw deny out from any to <IP_address>` - deny all outgoing connections to specified IP address
-    5. `sudo ufw allow from <IP_address> to port 22` - allow SSH connections from specified IP address
+    5. `sudo ufw allow from <IP_address> to any port 22` - allow SSH connections to any iface from specified IP address
