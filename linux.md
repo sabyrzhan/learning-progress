@@ -12,4 +12,9 @@
     3. `reload` - the same as `stop then start`
     4. `reset` - reset to factory defaults by removing all custom rules by backing up all existing rules.
 6. Syntax of adding a rule: `ufw allow|deny in|out <port>[/<protocol>]`
-    1. For example: `ufw allow in 53/udp`
+7. Some examples of `allow/deny` usages:
+    1. `sudo ufw allow in 53/udp` - allow UDP connections on port 53
+    2. `sudo ufw allow 53/tcp from <IP address>` - allow TCP connections only specified ip address
+    3. `sudo ufw deny from <IP_address> to any` - deny any connection from IP address only
+    4. `sudo ufw deny out from any to <IP_address>` - deny all outgoing connections to specified IP address
+    5. `sudo ufw allow from <IP_address> to port 22` - allow SSH connections from specified IP address
