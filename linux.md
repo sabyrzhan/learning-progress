@@ -10,4 +10,4 @@
     1. `status verbose` - show verbose status of the rules
     2. `status numbered` - show status with assigned numbers
     3. `reload` - the same as `stop then start`
-    4. `reset` - reset to factory defaults by removing all custom rules
+    4. `reset` - reset to factory defaults by removing all custom rules by backing up all existing rules.
