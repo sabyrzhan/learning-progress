@@ -26,3 +26,7 @@ Can be registered as any legal entity.
 3. Assessment year - next year in which the income tax is assessed. For example:
     1. Fiscal year: 2015-2016
     2. Assessment year: 2016-2017
+
+## How banks earn money?
+Banks earn by giving loans to companies, business entities or consumers with high interst amount than depositors. Thus in the end they keep the difference
+between the money earned and their dept.
