@@ -30,3 +30,10 @@ Can be registered as any legal entity.
 ## How banks earn money?
 Banks earn by giving loans to companies, business entities or consumers with high interst amount than depositors. Thus in the end they keep the difference
 between the money earned and their dept.
+
+## Common account types
+1. Savings account - opened to save money with modest interest rates on the deposits.
+2. Current/Checking account - mostly business accounts, where transactions are performed everyday between financial accounts.
+3. Recurring deposit account - deposits are made by account holder with regular interval for a specified time period. Then after expiring that period bank 
+will pay relevant interest rate.
+4. Fixed deposit account - opened to earn interest on lump sum deposits for a fixed period of time until maturity. It is counted as safest financial instrument to earn interest on idle money.
