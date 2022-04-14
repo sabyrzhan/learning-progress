@@ -26,3 +26,4 @@
     1. `ufw app list` - list existing profiles
     2. `ufw app info <profile name>` - show detailed info about the profile
     3. `ufw allow | deny <profile name>` - actual usage of the profile
+3. Logging levels: low, medium, high, full. To set logging level: `ufw loggin <log level>`. Logging is written to `/var/log/ufw.log`
