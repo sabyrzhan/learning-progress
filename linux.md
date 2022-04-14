@@ -32,3 +32,35 @@
     3. `SRC` - source IP address
     4. `DST` - destination IP address
     5. `PROTO` - used protocol
+
+### Common practice to add rules
+1. Default: deny incoming, allow incoming, deny forwards
+2. Then: allow traffics on specific ports
+3. Example:
+```
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw default deny forward
+
+# Enable to VCS services
+sudo ufw allow svn
+sudo ufw allow git
+
+# Enable HTTP/S
+sudo ufw allow http
+sudo ufw allow https
+
+# Enable DNS
+sudo ufw allow 53
+
+# Rate limit on 22 port
+sudo ufw limit ssh
+
+# Enable DHCP
+sudo ufw allow 67:68/tcp
+
+# Enable SAMBA
+sudo ufw allow 137:137/udp
+sudo ufw allow 139/tcp
+sudo ufw allow 445/tcp
+```
