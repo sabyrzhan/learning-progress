@@ -50,3 +50,20 @@ investments greater than 1mln USD
 6. NPA (Non-performing Assets) - classification for loans or advances that in defaults or in arrears.
 7. KYC (Know Your Customer) - effort made to verify identity, suitability and the risks involved in business relationship. It can include ID card
 verification, face verification, document verification to limit the fraud.
+
+## Business activities
+1. Operational Activities - principal revenue producing activities of the enterprise, which can include buying and selling goods, prividing services, purchasing raw materials, building inventory, advertisements and shipping a product. For example:
+    1. Payment to good suppliers
+    2. Employee payments
+    3. Merchandise purchases
+2. Investing activities - acquisitions or long-term assets disposals such as property, plant, equipment. For example,
+    1. asset purchase or sale
+    2. loans to suppliers
+    3. payments to mergers and acquisitions
+3. Financial activities - inflow and outflow of cash between company and investors. Cash flow represent changes in size and compisition of equity 
+capital or borrowing of the entity.
+    1. Dividents paid
+    2. Sale or repurchase of the company's stock
+    3. Net borrowings
+    4. Borrowing and replaying bank loans
+    5. other activities that impact company's long-term liabilities and equity
