@@ -92,4 +92,5 @@ nc client:
 
 ### Scripting using Python
 Can be automated by using `pyufw` library. To install: `pip3 install pyufw`.
+
 For more information: https://pypi.org/project/pyufw/
