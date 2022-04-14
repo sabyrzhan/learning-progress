@@ -1,5 +1,5 @@
 # Linux learnings
-## Building from source code on Ubuntu
+## Building package from source on Ubuntu
 Referenced instruction: https://www.maketecheasier.com/build-package-from-source-linux/
 1. Create new directory. For example, `source`
 2. Download package source code: `apt-get source <package>`. For example: `apt-get source telnetd`
