@@ -68,3 +68,24 @@ sudo ufw allow 137:137/udp
 sudo ufw allow 139/tcp
 sudo ufw allow 445/tcp
 ```
+
+### Testing rules
+1. Using `netcat`:
+```
+TCP connection:
+nc listener:
+> nc -lvp 8888
+nc client:
+> nc -v 127.0.0.1 8888
+
+UDP connection:
+nc listener:
+> nc -lvup 8888
+nc client:
+> nc -vu 127.0.0.1 8888
+```
+2. Using `nmap`
+```
+> nmap -sT -p 8888 192.168.1.100 # here -s - protocol type (TCP, UDP)
+> namp -sT -p 8888,8889 192.168.1.100
+```
