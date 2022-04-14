@@ -27,11 +27,12 @@ Can be registered as any legal entity.
     1. Fiscal year: 2015-2016
     2. Assessment year: 2016-2017
 
-## How banks earn money?
+## Banks
+### How banks earn money?
 Banks earn by giving loans to companies, business entities or consumers with high interst amount than depositors. Thus in the end they keep the difference
 between the money earned and their dept.
 
-## Common account types
+### Common account types
 1. Savings account - opened to save money with modest interest rates on the deposits.
 2. Current/Checking account - mostly business accounts, where transactions are performed everyday between financial accounts.
 3. Recurring deposit account - deposits are made by account holder with regular interval for a specified time period. Then after expiring that period bank 
