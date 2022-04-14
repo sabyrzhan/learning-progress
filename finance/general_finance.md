@@ -3,7 +3,7 @@
 1. Sole proprietorship - owned by single person. The company is fully controlled by single person and actually shows not legal distinction 
 between the business owner and entity. Since all the profits pass through to the owner's personal income, it simpifies taxes significantly.
 2. Partnership - business owned by 2 or more people, called as partners.
-  1. General Partnership - is this type of partnership, every co-founder's assets are used to repay the liabilities of the partnership, which means 
+    1. General Partnership - is this type of partnership, every co-founder's assets are used to repay the liabilities of the partnership, which means 
 every partner is responsible other partner's actions. 
   2. Limited Liability Partnership (LLP) - the same general, but partner's are not responsible to other's actions or debts of the business. Each partner's 
 liabilities are limited to the amount they put into the business. Hence this behaves as General partnership and Company.
