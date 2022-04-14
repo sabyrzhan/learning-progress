@@ -67,3 +67,13 @@ capital or borrowing of the entity.
     3. Net borrowings
     4. Borrowing and replaying bank loans
     5. other activities that impact company's long-term liabilities and equity
+    
+## Financial statements
+Financial statements (or financial reports) are formal records of financial activities of person or business entity. There are 4 types of 
+financial statements:
+1. Balance sheet - is a financial statement that consists from company assets and source of funds at a certain point of time. Here company assets 
+are machinery, inventory etc. Whereas source of funds can be owner's own money or liabilities, for example bank loans. In short: status of business 
+assets, liabilities and equaity at certain point of time.
+2. Income statement - is a profit or loss (P&L report) accured during accounting period.
+3. Cash flow statement - statement shoing cash inflow and outflow during accounting period.
+4. Equity statement - reports on changes in equity or ownership over a stated period.
