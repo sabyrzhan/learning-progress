@@ -17,3 +17,12 @@ force them to pay depbt dues from each members personal funds.
   5. Non profiv companies - does not make any provit, but can earn revenue and run on commercial lines
 4. Startup - enterpreneurial venture formed to solve unmet need by developing a viable gusiness model around an innovative products and services.
 Can be registered as any legal entity.
+
+## Calendar vs Financial vs Assessment years
+1. Calendar year - starts from 1 Jan and last till 31 Dec. Standard Gregorian calendar used by everyone.
+2. Financial or Fiscal year - balance sheet and income statement for the period of 1 year across the globe. The period differs from country to country. For example:
+  1. USA: 1 October this year - 30 September next year.
+  2. UK: 6 April this year - 5 April next year.
+3. Assessment year - next year in which the income tax is assessed. For example:
+  1. Fiscal year: 2015-2016
+  2. Assessment year: 2016-2017
