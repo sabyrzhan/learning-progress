@@ -38,6 +38,7 @@
 2. Then: allow traffics on specific ports
 3. Example:
 ```
+# Set the defaults
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 sudo ufw default deny forward
