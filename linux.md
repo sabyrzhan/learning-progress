@@ -88,13 +88,13 @@ sudo ufw allow 445/tcp
 ```
 TCP connection:
 nc listener:
-> nc -lvp 8888
+> nc -lnvp 8888
 nc client:
 > nc -v 127.0.0.1 8888
 
 UDP connection:
 nc listener:
-> nc -lvup 8888
+> nc -lnvup 8888
 nc client:
 > nc -vu 127.0.0.1 8888
 ```
