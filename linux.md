@@ -26,4 +26,9 @@
     1. `ufw app list` - list existing profiles
     2. `ufw app info <profile name>` - show detailed info about the profile
     3. `ufw allow | deny <profile name>` - actual usage of the profile
-3. Logging levels: low, medium, high, full. To set logging level: `ufw loggin <log level>`. Logging is written to `/var/log/ufw.log`
+3. Logging levels: low, medium, high, full. To set logging level: `ufw loggin <log level>`. Logging is written to `/var/log/ufw.log`. Key fields from logs are:
+    1. `IN, OUT` - direction of the traffic
+    2. `MAC` - MAC address of the device
+    3. `SRC` - source IP address
+    4. `DST` - destination IP address
+    5. `PROTO` - used protocol
