@@ -19,4 +19,4 @@
     4. `sudo ufw deny out from any to <IP_address>` - deny all outgoing connections to specified IP address
     5. `sudo ufw allow from <IP_address> to any port 22` - allow SSH connections to any iface from specified IP address
     6. `sudo ufw allow from <IP_address> to any port 22 comment 'Allow from second host'` - the same allow rule with comment
-8. Application profiles - is a configuration that contains application name and ports for reusability and stored in INI format file at `/etc/ufw/applications.d` folder. The file fromat consists from `title`, `description` and `ports`.
+8. Application profiles - is a configuration that contains application name and ports for reusability and stored in INI format file at `/etc/ufw/applications.d` folder. The file fromat consists from `[<profile name>]`, `title`, `description` and `ports`.
