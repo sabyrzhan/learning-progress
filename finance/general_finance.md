@@ -72,11 +72,13 @@ capital or borrowing of the entity.
 Financial statements (or financial reports) are formal records of financial activities of person or business entity. There are 4 types of 
 financial statements:
 1. Balance sheet - is a financial statement that consists from company assets and source of funds at a certain point of time. Here company assets 
-are machinery, inventory etc. Whereas source of funds can be owner's own money or liabilities, for example bank loans. In short: status of business 
-assets, liabilities and equaity at certain point of time.
+are machinery, inventory etc. Whereas source of funds can be owner's own money or liabilities, for example bank loans. In short: it is the status of business assets, liabilities and equaity at certain point of time.
 2. Income statement - is a profit or loss (P&L report) accured during accounting period.
 3. Cash flow statement - statement shoing cash inflow and outflow during accounting period.
 4. Equity statement - reports on changes in equity or ownership over a stated period.
+
+### Balance sheet
+The formula of the assets: `assets = liabilities + equity`. Here eqity represent company capital and liability represent outside resource.
 
 ## Cash vs Accrual accounting
 1. Cash accounting:
