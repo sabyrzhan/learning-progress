@@ -1,4 +1,17 @@
 # Linux learnings
+## Building from source code on Ubuntu
+Referenced instruction: https://www.maketecheasier.com/build-package-from-source-linux/
+1. Create new directory. For example, `source`
+2. Download package source code: `apt-get source <package>`. For example: `apt-get source telnetd`
+3. Check build dependencies: `sudo dpkg-checkbuilddeps`
+4. Install build dependencies: `sudo apt-get build-dep <package>`
+5. (Optional) Update changes doc: `dch --local tar`
+6. Configure using one of below:
+    1. `./configure --with-c-compiler=gcc`
+    2. `./configure --with-c++-compiler=g++`
+7. Build: `make`
+8. (Optional) `make install`
+
 ## `ufw` - `iptables` frontend for managing Linux firewalls
 ### General
 1. To solve the complexities managing firewall rules with `iptables` - `ufw` is used as a front-end for `iptables`.
