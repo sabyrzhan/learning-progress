@@ -51,8 +51,8 @@ sudo ufw allow git
 sudo ufw allow http
 sudo ufw allow https
 
-# Enable DNS
-sudo ufw allow 53
+# Enable outbound DNS loopup
+sudo ufw allow out 53
 
 # Rate limit on 22 port
 sudo ufw limit ssh
