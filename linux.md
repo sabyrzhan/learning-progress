@@ -89,3 +89,6 @@ nc client:
 > nmap -sT -p 8888 192.168.1.100 # here -s - protocol type (TCP, UDP)
 > namp -sT -p 8888,8889 192.168.1.100
 ```
+
+### Scripting using Python
+Can be automated by using `pyufw` library. To install: `pip3 install pyufw`
