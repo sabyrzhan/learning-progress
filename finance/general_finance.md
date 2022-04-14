@@ -38,3 +38,15 @@ between the money earned and their dept.
 3. Recurring deposit account - deposits are made by account holder with regular interval for a specified time period. Then after expiring that period bank 
 will pay relevant interest rate.
 4. Fixed deposit account - opened to earn interest on lump sum deposits for a fixed period of time until maturity. It is counted as safest financial instrument to earn interest on idle money.
+
+### Basic terms
+1. Reserve ratio - portion of deposits that banks must hold as minimum value. The percentage requirement is issued by Central Bank of the country.
+For example, if bank has 500mln deposits and Federal Reserve requires 10% for reserve, then the bank has to have 50mln in reserve.
+2. Collateral - security provided to the bank in exchange for loan. Can be in form of gold, land etc.
+3. Fixed rate/Floating rate - fixed - rate of interest constant over time, floating - when it changes.
+4. Credit score/Rating - number that indicates creditworthiness of an individual. The higher is better for borrowers.
+5. HNI (High Net-worth Invidivduals) - used to designate the persons whose investible weath exceed the given amount. For example, clients with 
+investments greater than 1mln USD
+6. NPA (Non-performing Assets) - classification for loans or advances that in defaults or in arrears.
+7. KYC (Know Your Customer) - effort made to verify identity, suitability and the risks involved in business relationship. It can include ID card
+verification, face verification, document verification to limit the fraud.
