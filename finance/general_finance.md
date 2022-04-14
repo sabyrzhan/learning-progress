@@ -1,4 +1,4 @@
-# Genera Finance
+# General Finance
 ## Forms of Enterprises
 1. Sole proprietorship - owned by single person. The company is fully controlled by single person and actually shows not legal distinction 
 between the business owner and entity. Since all the profits pass through to the owner's personal income, it simpifies taxes significantly.
@@ -77,3 +77,15 @@ assets, liabilities and equaity at certain point of time.
 2. Income statement - is a profit or loss (P&L report) accured during accounting period.
 3. Cash flow statement - statement shoing cash inflow and outflow during accounting period.
 4. Equity statement - reports on changes in equity or ownership over a stated period.
+
+## Cash vs Accrual accounting
+1. Cash accounting:
+    1. Recognises revenues when cash has been received
+    2. Recognises expenses when cash has been spent
+    3. Taxes are not paid on the money that has not bee received yet
+    4. Mostly used by small businesses.
+2. Accrual accounting:
+    1. Recognises revenue when it is earned. Examples when a project is complete and invoice is shared.
+    2. Recognises expenses when you are billed, i.e. when you received an invoice.
+    3. Taxes are paid for which you have shown transactions
+    4. Mosly used by medium and big companies. Also might depend on the country rules.
