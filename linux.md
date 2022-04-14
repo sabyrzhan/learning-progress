@@ -54,6 +54,9 @@ sudo ufw allow https
 # Enable outbound DNS loopup
 sudo ufw allow out 53
 
+# Enable outbound NTP sync
+sudo ufw allow out ntp
+
 # Rate limit on 22 port
 sudo ufw limit ssh
 
