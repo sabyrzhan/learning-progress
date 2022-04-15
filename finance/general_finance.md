@@ -77,7 +77,7 @@ are machinery, inventory etc. Whereas source of funds can be owner's own money o
 3. Cash flow statement - statement shoing cash inflow and outflow during accounting period.
 4. Equity statement - reports on changes in equity or ownership over a stated period.
 
-### Balance sheet
+## Balance sheet
 The formula of the assets: `assets = liabilities + equity`. Here eqity represent company capital and liability represent outside resource.
 
 ## Classification of assets
@@ -110,6 +110,14 @@ Liabilities - are the obligations or debts that company has to pay at some time 
     2. Deferred tax liabilities (net)
     3. Other long-term liabilities
     4. Long-term provisions
+
+## Equities
+Equity is the liability towards the shareholders and is termed as "Shareholder Funds". It is comprised of:
+1. Share capital - shares issued by company for subscription and amount received for issued shares and shares issued for consideration other than 
+cash. Reserve is created to strengthen company positions in the time of losses.
+2. Reserves and Surplus - reserves mean amount set aside our profits and surpluses to meet future uncertainties. 
+3. Money received against Share Warrants - financial instrument which gives holder to acquire equity shares at specified date and rate.
+4. Share Application Money Pending Allotment - amount received by the company towards share application and against which it will certainly allot shares.
 
 ## Cash vs Accrual accounting
 1. Cash accounting:
