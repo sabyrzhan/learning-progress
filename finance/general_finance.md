@@ -80,6 +80,24 @@ are machinery, inventory etc. Whereas source of funds can be owner's own money o
 ### Balance sheet
 The formula of the assets: `assets = liabilities + equity`. Here eqity represent company capital and liability represent outside resource.
 
+## Classification of assets
+1. Current assets
+    1. Cash and Cash equivalents
+    2. Inventories
+    3. Trade receivables
+    4. Short term loan & advances
+    5. Current investments
+    6. Other current investments
+3. Non-current assets
+    1. Long-term loan and advances
+    2. Non-current investments
+    3. Deferred tax assets (net)
+    4. Fixed assets
+        1. Tangible assets
+        2. Intangible assets
+        3. Capital work-in-progress
+        4. Intangible assets under development
+
 ## Cash vs Accrual accounting
 1. Cash accounting:
     1. Recognises revenues when cash has been received
