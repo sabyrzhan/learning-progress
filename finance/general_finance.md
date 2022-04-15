@@ -98,6 +98,19 @@ The formula of the assets: `assets = liabilities + equity`. Here eqity represent
         3. Capital work-in-progress
         4. Intangible assets under development
 
+## Liabilties
+Liabilities - are the obligations or debts that company has to pay at some time in future. They are classified as:
+1. Current liabilities - are those which are expected to be paid within a year. Examples: bank overdraft, bills payable, short-term borrowings etc.
+    1. Short-term borrowings
+    2. Trade payables
+    3. Other current liabilities
+    4. Short-term provisions
+3. Non-current liabilities - represent financial obligations from balance sheet that are not expected to be paid within 1 year.
+    1. Long-term borrowings
+    2. Deferred tax liabilities (net)
+    3. Other long-term liabilities
+    4. Long-term provisions
+
 ## Cash vs Accrual accounting
 1. Cash accounting:
     1. Recognises revenues when cash has been received
