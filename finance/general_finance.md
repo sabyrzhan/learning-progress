@@ -80,6 +80,20 @@ are machinery, inventory etc. Whereas source of funds can be owner's own money o
 ## Balance sheet
 The formula of the assets: `assets = liabilities + equity`. Here eqity represent company capital and liability represent outside resource.
 
+## Income statement
+Key terms:
+1. Revenue from operations - is a money earned by selling goods or services to clients.
+2. COGS (Cost of Goods Sold) - cost related to the production of goods or provision of services. Examples: raw material costs, labor wages, shipping costs
+3. Operating expenses - expenses not related to production but for running business. Examples: marketing expenses, rents, management salaries
+4. Non operating revenue (Gains) - revenues gaines from performing non-core business activities. Examples: renting, interests etc.
+5. Non operating expenses (Losses) - expenses gained from performing non-core business activities. Examples: interest, loss due to fire, losing cort case
+
+Formula for calculating gains and losses:
+1. Revenue from Operations - COGS = Gross Profit/Margin
+2. Gross Profit - Operating Expenses = Operating Income/Profit
+3. Gains - Loss = Non operating income
+4. Operating income - Non operating income = Net profit/income
+
 ## Classification of assets
 1. Current assets
     1. Cash and Cash equivalents
