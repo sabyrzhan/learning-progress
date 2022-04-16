@@ -182,3 +182,19 @@ TVM - is the concept that sum of money is worth now than the value at future dat
 2. Compound interest - the interest value is added every year to the value of previous year. With the same example above:
     1. FV (Future value) = P * (1 + R)^T
     2. FV = 1000 * (1 + 0.1)^5 = 1000 * 1.61051 = 1610.51$
+3. Intra year compound interest: FV = P * (1 + R / m)^Tm - where m number of compounding in year:
+    1. Annually: m = 1
+    2. Semi-annually: m = 2
+    3. Quarterly: m = 4
+    4. Monthly: m = 12
+    5. Example: 10 000$ deposit for 4 years with 12% interest:
+        1. Annually: FV = 10 000 * (1 + 0.12 / 1)^(4 * 1) = 15 735$
+        2. Semiannually: FV = 10 000 * (1 + 0.12 / 2)^(4 * 2) = 15 938$ 
+        3. Quarterly: FV = 10 000 * (1 + 0.12 / 4)^(4 * 4) = 16 047$ 
+        4. Monthly: FV = 10 000 * (1 + 0.12 / 12)^(4 * 12) = 16 122$ 
+
+
+Present value can be calculated out from FV formula:
+1. P = FV / (1 + R)^T
+2. Example: deposit value of $500 000 after 10 years with 13% interest.
+    1. P = 500 / (1 + 0.13)^10 = 500 / 3.3946 = $147.29
