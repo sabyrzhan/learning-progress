@@ -223,3 +223,14 @@ Classified as:
 
 ### Money market
 Money market the is the short-term funds which deals in monetary assets whose period of maturity is upto one year.
+
+## ESOP - Employee Stock Option Plan
+ESOPs are options given to eployee to become shareholder of the company. They are not shares, but options. To be shares they are excercised after employee has completed a specified no. of years with the company.
+
+Key stages:
+1. Preperation of incentive plan
+2. Granting an option
+3. Vesting - granting of options during employee's lock-in period but still is not the owner. Vesting period == lock-in period.
+4. Excercise - converting of options to shares.
+5. Sale
+
