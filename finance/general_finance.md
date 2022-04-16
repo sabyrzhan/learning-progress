@@ -198,3 +198,9 @@ Present value can be calculated out from FV formula:
 1. P = FV / (1 + R)^T
 2. Example: deposit value of $500 000 after 10 years with 13% interest.
     1. P = 500 / (1 + 0.13)^10 = 500 / 3.3946 = $147.29
+
+## Anuity
+Anuity is the constant cash flow (payment or receipt) occurring at regualar time interval.
+
+Formula:
+* FVA = A * ((1 + r)^T - 1)/R where A is the constant periodic flow
