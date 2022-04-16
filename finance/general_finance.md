@@ -204,3 +204,22 @@ Anuity is the constant cash flow (payment or receipt) occurring at regualar time
 
 Formula:
 * FVA = A * ((1 + r)^T - 1)/R where A is the constant periodic flow
+
+## Financial markets
+Types of markets:
+1. Capital markets
+    1. Stock markets
+    2. Bond markets
+2. Money markets
+3. Commodity markets
+4. Derivative markets
+5. Foreign Exchange markets
+6. Cryptocurrency markets
+
+### Capital markets
+Classified as:
+1. Primary market - where new equity or bonds are sold to investors. Example: IPO
+2. Secondary market - where existing securities are traded. Examples: NYSE or NASDAQ
+
+### Money market
+Money market the is the short-term funds which deals in monetary assets whose period of maturity is upto one year.
