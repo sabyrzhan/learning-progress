@@ -77,10 +77,10 @@ are machinery, inventory etc. Whereas source of funds can be owner's own money o
 3. Cash flow statement - statement shoing cash inflow and outflow during accounting period.
 4. Equity statement - reports on changes in equity or ownership over a stated period.
 
-## Balance sheet
+### Balance sheet
 The formula of the assets: `assets = liabilities + equity`. Here eqity represent company capital and liability represent outside resource.
 
-## Income statement
+### Income statement
 Key terms:
 1. Revenue from operations - is a money earned by selling goods or services to clients.
 2. COGS (Cost of Goods Sold) - cost related to the production of goods or provision of services. Examples: raw material costs, labor wages, shipping costs
@@ -98,6 +98,16 @@ Formula for calculating gains and losses:
 2. Gross Profit - Operating Expenses = Operating Income/Profit
 3. Gains - Loss = Non operating income
 4. Operating income - Non operating income = Net profit/income
+
+### Cash flow
+1. Cash inflow == receipts, Cash outflow == payments
+2. Methods
+    1. Direct methhod - recording of tranasactions as they terna and leave your business and use this information at the end of the month to prepare cash flow statement
+    2. Indirect method - recording of transactions from income statement and balance sheet. Income statement - show how money entered and left the business, balance sheet - show transactions that affected different accounts.
+3. Transactions that increase assets - decreases cash flow
+4. Transactions decrease assets - increases cash flow
+5. Transactions that increase liabilities - increase cash flow
+6. Transactions that decrease liabilities - decrease cash flow
 
 ## Classification of assets
 1. Current assets
