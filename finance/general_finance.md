@@ -87,6 +87,11 @@ Key terms:
 3. Operating expenses - expenses not related to production but for running business. Examples: marketing expenses, rents, management salaries
 4. Non operating revenue (Gains) - revenues gaines from performing non-core business activities. Examples: renting, interests etc.
 5. Non operating expenses (Losses) - expenses gained from performing non-core business activities. Examples: interest, loss due to fire, losing cort case
+6. Top line - is the same as revenue from operations - money received from sale of products and services before expenses taken out
+7. Bottom line - same as net income - money received after expenses taken out.
+8. Expenditure - more general term of expense - spending money for some benefit, service or property owned.
+    1. Expense or revenue expenditure - if benefit is exhausted within a year
+    2. Asset or capital expenditure - if benfit lasts for more than 1 year.
 
 Formula for calculating gains and losses:
 1. Revenue from Operations - COGS = Gross Profit/Margin
