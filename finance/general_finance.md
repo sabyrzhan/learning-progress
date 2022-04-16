@@ -234,3 +234,6 @@ Key stages:
 4. Excercise - converting of options to shares.
 5. Sale
 
+## Cryptocurrency
+Cryptocurrency - is a form of currency that utilises cryptography for secure transactions. When we transfer cryptocurrency funds, the transactions are recorded in a public ledger. The cryptocurrencties themselves are stored in a digital wallet. 
+
