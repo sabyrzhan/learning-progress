@@ -162,3 +162,7 @@ cash. Reserve is created to strengthen company positions in the time of losses.
 
 ## Inflation
 Inflation - general rise in price over a period of time. When it rises each unit of currency buys fewer goods and services. The opposite is deflation.
+
+Types:
+1. Demand-pull - happens when demand for good/service exceeds production capacity
+2. Cost-push - when production cost increase in price
