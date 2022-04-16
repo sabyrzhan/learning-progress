@@ -166,3 +166,19 @@ Inflation - general rise in price over a period of time. When it rises each unit
 Types:
 1. Demand-pull - happens when demand for good/service exceeds production capacity
 2. Cost-push - when production cost increase in price
+
+## Time value of money (TVM)
+TVM - is the concept that sum of money is worth now than the value at future date.
+
+## Interest types
+1. Simple interest - amount is always earned based on present value.
+    1. Example: 1000$ for 5 years with 10% interest.
+    2. Formula: Interest value = P * R * T / 100
+        1. P = Principal value
+        2. R = interest rate
+        3. T = time in years
+    3. Value = 1000 * 10 * 5 / 100 = 500$
+    4. FV (Future value) = Principal amount + Total interest = 1000 + 500 = 1500$
+2. Compound interest - the interest value is added every year to the value of previous year. With the same example above:
+    1. FV (Future value) = P * (1 + R)^T
+    2. FV = 1000 * (1 + 0.1)^5 = 1000 * 1.61051 = 1610.51$
