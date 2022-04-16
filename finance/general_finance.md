@@ -159,3 +159,6 @@ cash. Reserve is created to strengthen company positions in the time of losses.
     2. Recognises expenses when you are billed, i.e. when you received an invoice.
     3. Taxes are paid for which you have shown transactions
     4. Mosly used by medium and big companies. Also might depend on the country rules.
+
+## Inflation
+Inflation - general rise in price over a period of time. When it rises each unit of currency buys fewer goods and services. The opposite is deflation.
