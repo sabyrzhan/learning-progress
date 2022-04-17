@@ -20,7 +20,7 @@
         1. Interface inheritance
         2. The adapter apttern
 5. D - Dependency Inversion Principle
-    1. Most classes should depend on abstractions but not on implementation details
+    1. Most classes should depend on abstractions but not on implementation details. That is highler level modules should not depend on lower level modules.
     2. Abstractions focus on WHAT, implementation focus on HOW - which means details depend on interfaces not vice versa
     3. Classes should be explicit on their dependencies
     4. Clients should inject dependencies when they create other classes
