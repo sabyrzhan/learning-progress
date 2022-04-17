@@ -15,7 +15,7 @@
         2. Null checking
         3. `NotImplementedException` like exceptions
 4. I - Interface segregation principle
-    1. Prefer small, cohesive interfaces to large expensive ones
+    1. Prefer small, cohesive interfaces to large expensive ones. Clients should not be forced to implements the methods they dont use.
     2. For large interfaces following can be applied:
         1. Interface inheritance
         2. The adapter apttern
