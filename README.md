@@ -6,3 +6,4 @@
 - [K8s](k8s.md)
 - [Math](math.md)
 - [Linux](linux.md)
+- [Software engineering](software_engineering.md)
