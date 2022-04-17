@@ -9,7 +9,7 @@
     2. Anyway, before applying principle any problem should be solved using simple and concrete code first
 3. L - Liskov Principle
     1. Subtypes must be substitutable for their base types
-    2. Actually subset of polymorphism with addition of IS-SUBSTITUTABLE alogside of IS-A principle
+    2. Actually subset of polymorphism with addition of IS-SUBSTITUTABLE alogside of IS-A principle, which means the subtype actually must not change the behavior of the parent class but extends its functionality, thus preserving the compatibility.
     3. Key violations to look for:
         1. Type checking
         2. Null checking
