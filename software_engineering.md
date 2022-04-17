@@ -19,7 +19,8 @@
     1. Prefer small, cohesive interfaces to large expensive ones. Clients should not be forced to implements the methods they dont use.
     2. For large interfaces following can be applied:
         1. Interface inheritance
-        2. The adapter apttern
+        2. The adapter pattern
+        3. The facade pattern
 5. D - Dependency Inversion Principle
     1. Most classes should depend on abstractions but not on implementation details. That is highler level modules should not depend on lower level modules.
     2. Abstractions focus on WHAT, implementation focus on HOW - which means details depend on interfaces not vice versa
