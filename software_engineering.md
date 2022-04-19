@@ -29,3 +29,6 @@
 
 ## SoC - Seperation of Concerns
 SRP and SoC are closely relative to each other. In this principle function responsibiliy should also do one thing very well and be seperated from other layer responsibilties.
+
+## CQS - Command-Query Principle
+This principle dictates that one function should either query data or operate on data but not both. For example, if have the method `isLoggedIn(username)` responsible for checking loggedin user, then it should not be responsible for logging (perform action) in the user, but only to verify (query data) that user is logged in.
