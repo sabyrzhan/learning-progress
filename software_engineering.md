@@ -1,4 +1,10 @@
 # Software Engineering
+## Architecture vs Design
+* Architecture - highest level of abstraction that shows from which components/modules the system consists and desribe their interaction.
+* Design - is applied to component/module and describes its functionality (functions, relations, dependencies etc)
+
+From this definition I can say that architecture itself consists from designs of each component. In reality, when new component's design is complete it is merged into system architecture, thus the original design spec becomes obsolete.
+
 ## SOLID principle
 1. S - Single-Responsibility Principle
     1. Each class/function should have single respinsibility or reason to change
