@@ -27,6 +27,18 @@
     3. Classes should be explicit on their dependencies
     4. Clients should inject dependencies when they create other classes
 
+## DRY - Dont Repeat Yourself
+Each pience of logic must be unique and should not be repeated in other places. Following signs show that the logic is repeated elsewhere if used:
+* magical hardcoded literals
+* repeated functions
+* repeated logics with if-else or switch statements
+
+## KISS - Keep It Simple, Stupid
+Principle dictates that simplicity is the key in architecting and writing quality application. Overengineered design can be hard to understand and maintain in long term perspective.
+
+## YAGNI - You Aint' Gona Need It
+I see this principle as some kind of extension of KISS. Because it dictates - dont create the functionality you are not going to use. Most of the times developers or architects create additional modules or functions thinking they can be used and be useful in future.
+
 ## SoC - Seperation of Concerns
 SRP and SoC are closely relative to each other. In this principle function responsibiliy should also do one thing very well and be seperated from other layer responsibilties.
 
