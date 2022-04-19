@@ -33,7 +33,7 @@ SRP and SoC are closely relative to each other. In this principle function respo
 ## CQS - Command-Query Principle
 This principle dictates that one function should either query data or operate on data but not both. For example, if have the method `isLoggedIn(username)` responsible for checking loggedin user, then it should not be responsible for logging (perform action) in the user, but only to verify (query data) that user is logged in.
 
-# LOD - Law Of Demeter
+## LOD - Law Of Demeter
 Dictates that any class:
 * should call its own method
 * should call methods of its properties/fields
@@ -41,3 +41,10 @@ Dictates that any class:
 * methods of objects created within this class
 
 In other words the principle is used to weaken loose coupling and make encapsulation stronger between the classes.
+
+## POLA - Principle of Least Astonishment
+Each class behavior has to perform actions in compliance to expectation of the user. Call of its method should not bring unexpected exceptions or perform different behavior. It is used in places where:
+* fault-tolerance is required. For example in APIs
+* immuatbility state
+* CQS actions
+* contract based API
