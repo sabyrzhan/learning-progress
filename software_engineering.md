@@ -62,4 +62,8 @@ Each class behavior has to perform actions in compliance to expectation of the u
 * contract based API
 
 ## RAP - Reused Abstraction Principle
-There should be minimum three extending classes of interface or abstract class to remain seperately. Otherwise extreme amount of abstraction will increase the capability of easy maintenance and understanding the architecture.
+There should be minimum three extending classes of interface or abstract class to remain seperately. Otherwise extreme amount of abstraction will increase the capability of easy maintenance and add additional complexity to understand. Base steps to acheive the principle:
+1. begin with concrete implementation of behavior
+2. search for similar behaviors in other places
+3. apply "rule of three" principle
+
