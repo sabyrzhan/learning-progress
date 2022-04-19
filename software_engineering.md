@@ -60,3 +60,6 @@ Each class behavior has to perform actions in compliance to expectation of the u
 * immuatbility state
 * CQS actions
 * contract based API
+
+## RAP - Reused Abstraction Principle
+There should be minimum three extending classes of interface or abstract class to remain seperately. Otherwise extreme amount of abstraction will increase the capability of easy maintenance and understanding the architecture.
