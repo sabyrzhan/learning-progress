@@ -40,7 +40,7 @@ Principle dictates that simplicity is the key in architecting and writing qualit
 I see this principle as some kind of extension of KISS. Because it dictates - dont create the functionality you are not going to use. Most of the times developers or architects create additional modules or functions thinking they can be used and be useful in future.
 
 ## SoC - Seperation of Concerns
-SRP and SoC are closely relative to each other. In this principle function responsibiliy should also do one thing very well and be seperated from other layer responsibilties.
+SRP and SoC are closely relative to each other. In this principle function responsibiliy should also do one thing very well and be seperated from other layer responsibilties. For example, UI and Business layers should do actions only in scope of their own responsibility.
 
 ## CQS - Command-Query Principle
 This principle dictates that one function should either query data or operate on data but not both. For example, if have the method `isLoggedIn(username)` responsible for checking loggedin user, then it should not be responsible for logging (perform action) in the user, but only to verify (query data) that user is logged in.
