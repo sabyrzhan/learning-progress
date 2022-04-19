@@ -26,3 +26,6 @@
     2. Abstractions focus on WHAT, implementation focus on HOW - which means details depend on interfaces not vice versa
     3. Classes should be explicit on their dependencies
     4. Clients should inject dependencies when they create other classes
+
+## SoC - Seperation of Concerns
+SRP and SoC are closely relative to each other. In this principle function responsibiliy should also do one thing very well and be seperated from other layer responsibilties.
