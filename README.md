@@ -7,4 +7,4 @@
 - [Math](math.md)
 - [Linux](linux.md)
 - [Software engineering](software_engineering.md)
-- SQL(sql.md)
+- [SQL](sql.md)
