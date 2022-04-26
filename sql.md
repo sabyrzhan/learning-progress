@@ -18,3 +18,10 @@ It has following read phenomenas:
 2. Read uncommitted - the transaction can see other transactions' uncommitted data.
 3. Repeatable read - during the transaction the record values keep consistent no matther how many queries made.
 4. Serializable - the strongest level. Parallelly run transaction act the same way as if they run sequentially. At the same time it can degredate the overall performance because of the locks and latencies it produces.
+
+## PostgreSQL
+### Quickly generate data
+For example, to generate 1 000 000 records in table `temp(value int)`:
+```
+insert into temp(value) select random() * 100 from generate_series(0, 1000000);
+```
