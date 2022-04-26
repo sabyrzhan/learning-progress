@@ -5,6 +5,11 @@
 * Isolation - determines the visibility level to users. The lower the lavel the latest data (or durtiest) data the users will see. And conversely, the higher the level the farther from the other transaction changes.
 * Durable - the successfully committed transaction survives permanently after crash.
 
+## Partitioning vs Sharding
+Partitioning - Dividing large table into seperate tables within one instance of the SQL service.<br>
+Sharding - the same as partitioning, but in different service instances.<br>
+By partitioning not only the table is data is divided, but also table indexes, thus improving the performance.<br>
+
 ### Isolation
 #### Read phenomenas
 It has following read phenomenas:
