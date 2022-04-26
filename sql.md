@@ -2,6 +2,8 @@
 ## General architecture
 Table data are stored in so called pages. Pages store multiple records, so whenever we query the data from storage - the first thing that is fetched is the page. And only after the data that confirms to the query is looked up within that page. Single page can store multiple records and depends on the settings of the underlying storage settings.
 
+Whenever we query a record, server always fetch whole data with all the columns. Because that is the nature of the SQL data - singe records stored in a page contains whole record data. Its lenght is equals to the sum of column data type. That is why better to always choose correct data type with correct length to decrease the IO operations between server and application.
+
 ## ACID - SQL transaction property
 * Atomicity - the transaction is atomic. The result of the operation shows the data either successfully written or failed.
 * Consistency - any read operation after successfull write or delete returns latest value of the record
