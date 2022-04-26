@@ -5,11 +5,6 @@
 * Isolation - determines the visibility level to users. The lower the lavel the latest data (or durtiest) data the users will see. And conversely, the higher the level the farther from the other transaction changes.
 * Durable - the successfully committed transaction survives permanently after crash.
 
-## Partitioning vs Sharding
-Partitioning - Dividing large table into seperate tables within one instance of the SQL service.<br>
-Sharding - the same as partitioning, but in different service instances.<br>
-By partitioning not only the table is data is divided, but also table indexes, thus improving the performance.<br>
-
 ### Isolation
 #### Read phenomenas
 It has following read phenomenas:
@@ -23,6 +18,11 @@ It has following read phenomenas:
 2. Read uncommitted - the transaction can see other transactions' uncommitted data.
 3. Repeatable read - during the transaction the record values keep consistent no matther how many queries made.
 4. Serializable - the strongest level. Parallelly run transaction act the same way as if they run sequentially. At the same time it can degredate the overall performance because of the locks and latencies it produces.
+
+## Partitioning vs Sharding
+Partitioning - Dividing large table into seperate tables within one instance of the SQL service.<br>
+Sharding - the same as partitioning, but in different service instances.<br>
+By partitioning not only the table is data is divided, but also table indexes, thus improving the performance.<br>
 
 ## PostgreSQL
 ### Quickly generate data
