@@ -4,6 +4,7 @@
   - [General finance](finance/general_finance.md)
   - [Crypto](finance/crypto.md)
   - [Genearal loan](finance/loan.md)
+  - [Excel](finance/excel.md)
 - [K8s](k8s.md)
 - [Math](math.md)
 - [Linux](linux.md)
