@@ -1,4 +1,4 @@
-# All about Loan
+# General Loan
 ## EMI calculation in Excel
 EMI (Equated Monthly Installment) - monthly payment to borrower, which often time include interest value alongside principal value.
 
