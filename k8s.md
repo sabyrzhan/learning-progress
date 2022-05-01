@@ -42,7 +42,7 @@ TODO
 brew tap weaveworks/tap
 brew install weaveworks/tap/eksctl
 ```
-2. Create cluster. To customise settings additional parameters can be specified. If no parameter specified, then default values will be used. For example:
+2. Create cluster (this will take ~20 minutes depending on your settings). To customise settings additional parameters can be specified. If no parameter specified, then default values will be used. For example:
 ```
 eksctl create cluster \
     --name test-eks2 \
@@ -50,6 +50,10 @@ eksctl create cluster \
     --nodegroup-name mainGroup \
     --node-type t3.medium \
     --nodes 2
+```
+3. To Delete cluster:
+```
+ecksctl delete cluster --name test-eks2
 ```
 
 ## K8s HA
