@@ -24,6 +24,9 @@ Install using brew: `brew install helm`
 2. Install helm chart. First cd into chart folder and execute: `helm install <chart_name> .`
 3. List installed charts: `helm list`
 4. Uninstall chart: `helm uninstall <chart_name>`
+5. Render config: `helm template .`
+6. Render and deploy: `helm template . | kubectl apply -f -`
+7. Test for error: `helm lint`
 
 ## EKS Deployment
 There are 2 ways to create EKS cluster:
