@@ -15,7 +15,30 @@ Node:
   - KubeProxy - network component that provides communication between pods, nods and containers
   - CRI (Container Runtime Interface) - abstract interface that manages containers.
 
-# K8s HA
+## EKS Deployment
+There are 2 ways to create EKS cluster:
+1. Manually using AWS Console or CLI
+2. Using `eksctl` tool
+
+## Create manually
+
+## Create using `eksctl` tool
+1. Install `eksctl` as described [here](https://github.com/weaveworks/eksctl). For example, with brew:
+```
+brew tap weaveworks/tap
+brew install weaveworks/tap/eksctl
+```
+2. Create cluster. To customise settings additional parameters can be specified. If no parameter specified, then default values will be used. For example:
+```
+eksctl create cluster \
+    --name test-eks2 \
+    --region us-east-1 \
+    --nodegroup-name mainGroup \
+    --node-type t3.medium \
+    --nodes 2
+```
+
+## K8s HA
 ### ReplicaSet
 ```
 apiVersion: apps/v1
