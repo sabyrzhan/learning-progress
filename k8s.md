@@ -30,8 +30,9 @@ Install using brew: `brew install helm`
 8. Debug errors: `helm lint`
 9. Package chart: `helm package .`
 10. Add repository: `helm repo add chartmuseum http://localhost:8080`
-11. Search repo: `helm search repo <search>`
-12. Update repo: `helm repo update`
+11. Remove repository: `helm repo remove <repo_name>`
+12. Search repo: `helm search repo <search>`
+13. Update repo: `helm repo update`
 
 ### `chartmuseum` - charts repository
 From [this](https://github.com/helm/chartmuseum) instruction:
