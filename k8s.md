@@ -28,6 +28,18 @@ Install using brew: `brew install helm`
 6. Render config: `helm template .`
 7. Render and deploy: `helm template . | kubectl apply -f -`
 8. Debug errors: `helm lint`
+9. Package chart: `helm package .`
+10. Add repository: `helm repo add chartmuseum http://localhost:8080`
+11. Search repo: `helm search repo <search>`
+12. Update repo: `helm repo update`
+
+### `chartmuseum` - charts repository
+From [this](https://github.com/helm/chartmuseum) instruction:
+1. Install as docker
+2. Install repository: `helm repo add chartmuseum http://localhost:8080`
+3. Package your chart: `helm package .`
+4. Upload to repository: `curl --data-binary @<file_name> http://localhost:8080/api/charts`
+5. Install chart from repository: `helm install <chart_name> chartmuseum/<chart_name>`
 
 ## EKS Deployment
 There are 2 ways to create EKS cluster:
