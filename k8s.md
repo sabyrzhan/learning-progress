@@ -21,6 +21,7 @@ There are 2 ways to create EKS cluster:
 2. Using `eksctl` tool
 
 ## Create manually
+TODO
 
 ## Create using `eksctl` tool
 1. Install `eksctl` as described [here](https://github.com/weaveworks/eksctl). For example, with brew:
