@@ -15,6 +15,16 @@ Node:
   - KubeProxy - network component that provides communication between pods, nods and containers
   - CRI (Container Runtime Interface) - abstract interface that manages containers.
 
+## Helm charts
+### Installation
+Install using brew: `brew install helm`
+
+### Cluster management
+1. Create helm chart: `helm create <chart_name>`
+2. Install helm chart. First cd into chart folder and execute: `helm install <chart_name> .`
+3. List installed charts: `helm list`
+4. Uninstall chart: `helm uninstall <chart_name>`
+
 ## EKS Deployment
 There are 2 ways to create EKS cluster:
 1. Manually using AWS Console or CLI
