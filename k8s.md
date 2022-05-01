@@ -19,6 +19,9 @@ Node:
 ### Installation
 Install using brew: `brew install helm`
 
+### Charts repository
+The main helm chart repository is [ArtifactHUB](https://artifacthub.io/)
+
 ### Cluster management
 1. Create helm chart: `helm create <chart_name>`
 2. Install helm chart: `helm install <chart_name> .`
@@ -32,7 +35,8 @@ Install using brew: `brew install helm`
 10. Add repository: `helm repo add chartmuseum http://localhost:8080`
 11. Remove repository: `helm repo remove <repo_name>`
 12. Search repo: `helm search repo <search>`
-13. Update repo: `helm repo update`
+13. Pull chart binary: `helm pull <chart>`
+14. Update repo: `helm repo update`
 
 ### `chartmuseum` - charts repository
 From [this](https://github.com/helm/chartmuseum) instruction:
