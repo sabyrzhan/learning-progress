@@ -15,6 +15,13 @@ There at least 8 common false assumptions that developers make when developing s
 2. Partial failure - in contract to service running on single computer, in distributed environment components can fail. Because of that system can degrade or partially work.
 3. Concurrency - the system han handle multiple operations at the same time. Even working on the same data.
 
+## Measure of correctness
+There are 2 properties of measurement:
+1. Safety property - something that will never happen in a correct system
+2. Liveness property - something that eventually happen in a correct system.
+
+Even though both of these properties define correctness, the safety property is always considered and taken into account first that the second. That is because most of the times it is not possible to fully apply both of the properties and the same time.
+
 
 ## Three pillars of observability
 1. Metrics
