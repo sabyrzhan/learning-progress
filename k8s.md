@@ -15,6 +15,10 @@ Node:
   - KubeProxy - network component that provides communication between pods, nods and containers
   - CRI (Container Runtime Interface) - abstract interface that manages containers.
 
+## Contexts
+* Getting all contexts: `kubectl config get-contexts`
+* Using specific context: `kubectl config use-context <Name of context>`
+
 ## Helm charts
 ### Installation
 Install using brew: `brew install helm`
