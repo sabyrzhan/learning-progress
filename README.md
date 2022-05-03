@@ -9,4 +9,5 @@
 - [Math](math.md)
 - [Linux](linux.md)
 - [Software engineering](software_engineering.md)
+- [Distributed systems](distributed_systems.md)
 - [SQL](sql.md)
