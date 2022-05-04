@@ -52,8 +52,8 @@ Thus timeout is main reason we mostly use to identify the failure. However it ha
 
 ### Failure detector
 It is a seperate independent component of the node to identify the failure. 2 properies are used to categories it:
-* Completeness - 
-* Accuracy - 
+* Completeness - percentage of identified failed nodes in a certain period of time
+* Accuracy - number of mistakes made in a certain period of time
 
 
 ## Three pillars of observability
