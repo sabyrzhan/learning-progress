@@ -26,6 +26,12 @@ Even though both of these properties define correctness, the safety property is 
 1. Synchronous - every call to services are split into rounds, thus the caller is locked to the response from the called node.
 2. Asynchronous - each call to service is not bound to time when it receives response, so every node could run at independent rates.
 
+## Types of failures
+1. Fail-stop - node halted permanently and is detected very easily (f.e., with monitors)
+2. Crash - node halted silently (f.e., the system was not monitored). Can only be identified by sending only sending request.
+3. Omission - node fails to repond to incoming requests. Node is alive, but service is dead.
+4. Byzantine - node's behavior is anomalic. The server is reponding different responses for the same request. It might be due to bugs, malicious actor or smth similar.
+
 
 ## Three pillars of observability
 1. Metrics
