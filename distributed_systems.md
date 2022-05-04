@@ -70,14 +70,14 @@ There are 2 variants of partitioning:
 ### Horizontal partitioning alogrithms
 1. Range based partitioning - range criteria is used to partition data. For example, by using alphabet letters.
     1. Pros:
-            a. Implementation simplicity using partition key
-            b. Range query within single partition
-            c. Good performance for small amount of data
-            d. Re-partitioning is easier
+        * Implementation simplicity using partition key
+        * Range query within single partition
+        * Good performance for small amount of data
+        * Re-partitioning is easier
     2. Cons
-            a. Inability to range query without partition key
-            b. Bad performance for big data
-            c. Uneven distribution between the nodes
+        * Inability to range query without partition key
+        * Bad performance for big data
+        * Uneven distribution between the nodes
 
 
 ## Three pillars of observability
