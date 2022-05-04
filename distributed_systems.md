@@ -12,7 +12,7 @@ There at least 8 common false assumptions that developers make when developing s
 
 ## Types of services
 - Stateless - depend on direct and indirect inputs to return any results.
-- Stateless - depend on the state saved in the past and which directly relate to the result.
+- Statefull - depend on the state saved in the past and which directly relate to the result.
 
 ## Distributed system properties
 1. Network asynchrony - we will never know how much time the request to resource will take all the time. We can just give probably or max/min time range, because there multiple systems being interacted.
