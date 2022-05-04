@@ -33,11 +33,17 @@ Even though both of these properties define correctness, the safety property is 
 4. Byzantine - node's behavior is anomalic. The server is reponding different responses for the same request. It might be due to bugs, malicious actor or smth similar.
 
 ## Multiple deliveries of a message
-There might be cases when system A fails to send a message to system B. But mitigate this issue, system A can re-send the message by implementing retry mechanism. So in order to avoid double processing of the same message the systems can use following approaches:
-* idempotency - no matter how much time system A sends the message, system B responds with success status ensuring it processed only once.
-* de-duplication - it is the same as idempotency, except that unique ID is assigned to a message before sending it. So by that ID system ensures the message on processed once.
+There might be cases when system A fails to send a message to system B. But to mitigate this issue, system A can re-send the message by implementing retry mechanism. So in order to avoid double processing of the same message the systems can use following approaches:
+* idempotency - no matter how much time system A sends the message, system B responds with success status ensuring it is processed only once.
+* de-duplication - it is the same as idempotency, except that unique ID is assigned to a message before sending it. So by that ID system ensures the message was processed once.
 
-The difference between the two above is idempotency adds additional restrictions to the system. Whereas in second item we can make sure by another addition.
+The difference between the two above is idempotency adds additional restrictions to the system. Whereas in second case we can make sure by the message ID, which means not only receiver, but also sender takes part in it. Specifically for ID generation.
+
+I have also want to point out, that there are differences in delivery and processing:
+* delivery - can occur multiple times and we means delivery to the endpoint at hardware level;
+* processing - occurs mostly at software level.
+
+When designing the system we should assume that **delivery** happens multiple times, and **processing** should occur only one-time. These themselves implement such semantics like **at-most-once** and **at-least-once**.
 
 
 ## Three pillars of observability
