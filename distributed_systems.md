@@ -32,6 +32,13 @@ Even though both of these properties define correctness, the safety property is 
 3. Omission - node fails to repond to incoming requests. Node is alive, but service is dead.
 4. Byzantine - node's behavior is anomalic. The server is reponding different responses for the same request. It might be due to bugs, malicious actor or smth similar.
 
+## Multiple deliveries of a message
+There might be cases when system A fails to send a message to system B. But mitigate this issue, system A can re-send the message by implementing retry mechanism. So in order to avoid double processing of the same message the systems can use following approaches:
+* idempotency - no matter how much time system A sends the message, system B responds with success status ensuring it processed only once.
+* de-duplication - it is the same as idempotency, except that unique ID is assigned to a message before sending it. So by that ID system ensures the message on processed once.
+
+The difference between the two above is idempotency adds additional restrictions to the system. Whereas in second item we can make sure by another addition.
+
 
 ## Three pillars of observability
 1. Metrics
