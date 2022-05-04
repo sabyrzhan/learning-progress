@@ -68,7 +68,7 @@ There are 2 variants of partitioning:
 * Horizontal - splitting a table rows into multiple tables, which will require access multiple tables if you want to fetch range of data. Also requires the knowledge of the node if data must be retrieved with specific criteria. Another disadvantage is the loss of ACID property, because of the complexity to achieve between different nodes.
 
 ### Horizontal partitioning alogrithms
-1. Range based partitioning - range criteria is used to partition data. For example, by using alphabet letters.
+1. **Range based partitioning** - range criteria is used to partition data. For example, by using alphabet letters.
     1. Pros:
         * Implementation simplicity using partition key
         * Range query within single partition
@@ -78,13 +78,14 @@ There are 2 variants of partitioning:
         * Inability to range query without partition key
         * Bad performance for big data
         * Uneven distribution between the nodes
-2. Hash based partitining - using hash function on search criterias to find the correct node, most commonly with `mod` operator.
+2. **Hash based partitining** - using hash function on search criterias to find the correct node, most commonly with `mod` operator.
     1. Pros:
         * ability to calcuate node at runime without storing any statfull information about the location
         * more changes the data is evenly distributed
     2. Cons:
         * Inability to perform range queries between the nodes
         * Adding or removing node requires whole system to re-partition, which will require movement of all data within the nodes
+3. **Consistent hashing partitioning** - the same as hash based partitioning but with the solution of easy re-partitioning using ring topology.
 
 ## Three pillars of observability
 1. Metrics
