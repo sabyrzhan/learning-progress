@@ -10,6 +10,10 @@ There at least 8 common false assumptions that developers make when developing s
 7. Transport cost is zero - the data amount transferred, the network mesh that needs to be supported, stuff who is supported the network infrastructure, security, routing and many more are not zero cost. So in distributed when sending data from point A to point B, many factors are taken into account before calculating its cost.
 8. The network is homogeneous - simply put pc or smartphone which is communicating with the backend. Whereas the backend itself working with various protocols and interacting other services before responding back the to the user. As we can see the system heterogeneous and it is also as topology always changed and system also has to be adapted with lower downtime and latency.
 
+## Types of services
+- Stateless - depend on direct and indirect inputs to return any results.
+- Stateless - depend on the state saved in the past and which directly relate to the result.
+
 ## Distributed system properties
 1. Network asynchrony - we will never know how much time the request to resource will take all the time. We can just give probably or max/min time range, because there multiple systems being interacted.
 2. Partial failure - in contract to service running on single computer, in distributed environment components can fail. Because of that system can degrade or partially work.
