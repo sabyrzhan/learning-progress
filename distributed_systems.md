@@ -45,6 +45,16 @@ I have also want to point out, that there are differences in delivery and proces
 
 When designing the system we should assume that **delivery** happens multiple times, and **processing** should occur only one-time. These themselves implement such semantics like **at-most-once** and **at-least-once**.
 
+## Failure
+Failure is hard to detect in distributed environment. One of the reason for that - because of the asynchronous nature of the network. It makes harder to differentiate the failed node node respoding with latency.
+
+Thus timeout is main reason we mostly use to identify the failure. However it has its own trade-offs. For example, short timeout has make us believe the node is dead. Whereas long timeouts of the service call can make us to belieave the service is healthy.
+
+### Failure detector
+It is a seperate independent component of the node to identify the failure. 2 properies are used to categories it:
+* Completeness - 
+* Accuracy - 
+
 
 ## Three pillars of observability
 1. Metrics
