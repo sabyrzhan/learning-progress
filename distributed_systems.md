@@ -47,8 +47,8 @@ Thus timeout is main reason we mostly use to identify the failure. However it ha
 ### Types of failures
 1. Fail-stop - node halted permanently and is detected very easily (f.e., with monitors)
 2. Crash - node halted silently (f.e., the system was not monitored). Can only be identified by sending only sending request.
-3. Omission - node fails to repond to incoming requests. Node is alive, but service is dead.
-4. Byzantine - node's behavior is anomalic. The server is reponding different responses for the same request. It might be due to bugs, malicious actor or smth similar.
+3. Omission - node fails to respond to incoming requests. Node is alive, but service is dead.
+4. Byzantine - node's behavior is anomalic. The server is sending different responses to the same request. It might be due to bugs, malicious actor or smth similar.
 
 ### Failure detector
 It is a seperate independent component of the node to identify the failure. 2 properies are used to categories it:
