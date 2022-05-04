@@ -67,6 +67,18 @@ There are 2 variants of partitioning:
 * Vertical - splitting a table columns into multiple tables, which will require table joins if you want to fetch more data.
 * Horizontal - splitting a table rows into multiple tables, which will require access multiple tables if you want to fetch range of data. Also requires the knowledge of the node if data must be retrieved with specific criteria. Another disadvantage is the loss of ACID property, because of the complexity to achieve between different nodes.
 
+### Horizontal partitioning alogrithms
+1. Range based partitioning - range criteria is used to partition data. For example, by using alphabet letters.
+    1. Pros:
+        a. Implementation simplicity using partition key
+        b. Range query within single partition
+        c. Good performance for small amount of data
+        d. Re-partitioning is easier
+    2. Cons
+        a. Inability to range query without partition key
+        b. Bad performance for big data
+        c. Uneven distribution between the nodes
+
 
 ## Three pillars of observability
 1. Metrics
