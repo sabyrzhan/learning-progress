@@ -22,6 +22,10 @@ There are 2 properties of measurement:
 
 Even though both of these properties define correctness, the safety property is always considered and taken into account first that the second. That is because most of the times it is not possible to fully apply both of the properties and the same time.
 
+## Distributed system categories
+1. Synchronous - every call to services are split into rounds, thus the caller is locked to the response from the called node.
+2. Asynchronous - each call to service is not bound to time when it receives response, so every node could run at independent rates.
+
 
 ## Three pillars of observability
 1. Metrics
