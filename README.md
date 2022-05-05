@@ -10,4 +10,5 @@
 - [Linux](linux.md)
 - [Software engineering](software_engineering.md)
 - [Distributed systems](distributed_systems.md)
+- [Desing Patterns](design_patterns.md)
 - [SQL](sql.md)
