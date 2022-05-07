@@ -85,7 +85,13 @@ There are 2 variants of partitioning:
     2. Cons:
         * Inability to perform range queries between the nodes
         * Adding or removing node requires whole system to re-partition, which will require movement of all data within the nodes
-3. **Consistent hashing partitioning** - the same as hash based partitioning but with the solution for easy re-partitioning using ring topology. It uses so called range most often from integer from [0, N] sorted in asc order. The range is divided by N where N is the number of nodes, so the requests with specific key calculated by hasfunction will be directed to the specified node. However, this makes distributes requests unevenly if for instance one node handles requests with biggest range. To solve this problem - virtual nodes are used. As for the replication following types can be used:
+3. **Consistent hashing partitioning** - the same as hash based partitioning but with the solution for easy re-partitioning using ring topology. It uses so called "range" most from from integer numbers from [0, N], sorted in asc order. The range is divided by N where N is the number of nodes, so the requests with specific key calculated by hasfunction will be directed to the specified node. 
+    1. Pros:
+        * supports node addition/removal dynamically
+        * reduced data movement when replicating to nodes
+    2. Const:
+        * uneven distribution of load/data between the nodes (**virtual nodes** are used to solve this problem)
+For the replication following types can be used:
     * 1:N replication - where 1 node replicates to N hosts
     * Chained replication - replication is performed from one to another by chain
     * Mixed replication - mix of both replications
