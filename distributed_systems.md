@@ -95,6 +95,10 @@ For the replication following types can be used:
     * 1:N replication - where 1 node replicates to N hosts
     * Chained replication - replication is performed from one to another by chain
     * Mixed replication - mix of both replications
+    
+## Availability
+Availability - is the ability of the system to continue functioning even though some parts were failed. To achieve it **replication** is used.
+
 
 ## Three pillars of observability
 1. Metrics
