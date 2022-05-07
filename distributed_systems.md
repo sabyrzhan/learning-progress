@@ -101,7 +101,13 @@ For the replication following types can be used:
 Availability - is the ability of the system to continue functioning even though some parts were failed. To achieve it **replication** is used.
 
 ### Replication
-Replication is the technique of storing the same piece of data in multiple nodes, so when one of then is crashed - data is not lost and the requests can be handled in other nodes almost immediately.
+Replication is the technique of storing the same piece of data in multiple nodes, so when one of then is crashed - data is not lost and the requests can be handled in other nodes almost immediately. There are 2 main strategies: pessimistic and optimistic.
+
+#### Pessimistic replication
+TODO
+
+#### Optimistic replication
+TODO
 
 ## Three pillars of observability
 1. Metrics
