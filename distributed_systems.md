@@ -61,7 +61,7 @@ It is a seperate independent component of the node to identify the failure. 2 pr
 
 ## Scalability
 ### Partitioning
-Partitioning - is the process of splitting a dataset into multiple smaller datasets and assigning responsibility of storeing and processing on a different node. It mainly comes from relational database systems, but also used when designing distributed systems.
+Partitioning - is the process of splitting a dataset into multiple smaller datasets and assigning responsibility of storing and processing on a different node. It mainly comes from relational database systems, but also used when designing distributed systems.
 
 There are 2 variants of partitioning:
 * Vertical - splitting a table columns into multiple tables, which will require table joins if you want to fetch more data.
@@ -100,6 +100,8 @@ For the replication following types can be used:
 ## Availability
 Availability - is the ability of the system to continue functioning even though some parts were failed. To achieve it **replication** is used.
 
+### Replication
+Replication is the technique of storing the same piece of data in multiple nodes, so when one of then is crashed - data is not lost and the requests can be handled in other nodes almost immediately.
 
 ## Three pillars of observability
 1. Metrics
