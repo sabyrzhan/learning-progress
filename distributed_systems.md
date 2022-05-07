@@ -91,6 +91,7 @@ There are 2 variants of partitioning:
         * reduced data movement when replicating to nodes
     2. Const:
         * uneven distribution of load/data between the nodes (**virtual nodes** are used to solve this problem)
+
 For the replication following types can be used:
     * 1:N replication - where 1 node replicates to N hosts
     * Chained replication - replication is performed from one to another by chain
