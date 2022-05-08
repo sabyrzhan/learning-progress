@@ -127,6 +127,9 @@ Failover is process of one node taking over control the when main node crashes. 
 * Manual - performed manually. Counted as more reliable but it incurs significant downtime
 * Automatic - fast but can but risky, since if there are complicated operations it can lead to inconsistent state.
 
+## Resiliency
+The system is resilient means the ability the withstand certain kind of failures. Resilience is an attribute, reliability is an outcome.
+
 
 ## Three pillars of observability
 1. Metrics
