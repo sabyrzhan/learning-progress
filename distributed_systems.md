@@ -130,6 +130,11 @@ Failover is process of one node taking over control the when main node crashes. 
 ## Resiliency
 The system is resilient means the ability the withstand certain kind of failures. Resilience is an attribute, reliability is an outcome.
 
+## Distributed System Design Patterns
+### Bulkheads
+Used to partition services or service resources into pools to mitigate the impact of the failure in one pool to other pools. The term is coming from ship hull, where it has partitioned sections called "bulkheads", so if one of the bulkheads is filled with water, it will not bring down the whole ship.
+
+
 
 ## Three pillars of observability
 1. Metrics
