@@ -102,8 +102,8 @@ Availability - is the ability of the system to continue functioning even though 
 
 ### Replication
 Replication is the technique of storing the same piece of data in multiple nodes, so when one of then is crashed - data is not lost and the requests can be handled in other nodes almost immediately. There are 2 main strategies: pessimistic and optimistic:
-    * **Pessimistic replication** - provides single view for all replicated data as if they are stored on single node.
-    * **Optimistic replication** - allows different replicas to diverge, but get converged at a later time.
+* **Pessimistic replication** - provides single view for all replicated data as if they are stored on single node.
+* **Optimistic replication** - allows different replicas to diverge, but get converged at a later time.
 
 #### Single-Master replication
 Simplest type of replication where only one **leading** or **master** node and multiple **follower** nodes which is also called **replicas**. Here the leader node mostly perform write operations, whereas replicas do read operations, thus making them horizontally scalable.
