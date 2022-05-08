@@ -101,13 +101,31 @@ For the replication following types can be used:
 Availability - is the ability of the system to continue functioning even though some parts were failed. To achieve it **replication** is used.
 
 ### Replication
-Replication is the technique of storing the same piece of data in multiple nodes, so when one of then is crashed - data is not lost and the requests can be handled in other nodes almost immediately. There are 2 main strategies: pessimistic and optimistic.
+Replication is the technique of storing the same piece of data in multiple nodes, so when one of then is crashed - data is not lost and the requests can be handled in other nodes almost immediately. There are 2 main strategies: pessimistic and optimistic:
+    * **Pessimistic replication** - provides single view for all replicated data as if they are stored on single node.
+    * **Optimistic replication** - allows different replicas to diverge, but get converged at a later time.
 
-#### Pessimistic replication
-TODO
+#### Single-Master replication
+Simplest type of replication where only one **leading** or **master** node and multiple **follower** nodes which is also called **replicas**. Here the leader node mostly perform write operations, whereas replicas do read operations, thus making them horizontally scalable.
 
-#### Optimistic replication
-TODO
+The updates from master can be replicated:
+    * **Synchornous mode** - where the client receives acknowledge once master receives akcnowledge from all replicas. This mode has increased durability, but with slower response time.
+    * **Asynchronous mode** - where the clietn receives acknowledge once master finishes writing data locallly, thus perlicating eventually. This mode decreases durability and consistency but increases response time.
+    
+Pros:
+    * simple to understand and implement
+    * remove the need for complicated protocols
+    * horizontally scalalble read-replicas. Perfect for read heavy workload operations.
+Cons:
+    * not scalalble for write heavy workfloads
+    * a lot of read replicas can create a bottleneck for network traffic, since there is only single master node performing replication
+    * switch to failover node can not performed instantly when master node crashes
+    
+#### Failover
+Failover is process of one node taking over control the when main node crashes. There are 2 approaches:
+    * Manual - performed manually. Counted as more reliable but it incurs significant downtime
+    * Automatic - fast but can but risky, since if there are complicated operations it can lead to inconsistent state.
+
 
 ## Three pillars of observability
 1. Metrics
