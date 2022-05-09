@@ -128,7 +128,7 @@ Failover is process of one node taking over control the when main node crashes. 
 * Automatic - fast but can but risky, since if there are complicated operations it can lead to inconsistent state.
 
 ## Resiliency
-The system is resilient means the ability the withstand certain kind of failures - that is being responsive under failure. Resilience is an attribute, reliability is an outcome.
+Resiliency is the ability of the system to withstand certain kind of failures - that is being responsive under failure. Resilience is an attribute, reliability is an outcome.
 
 ## Distributed System Design Patterns
 ### Bulkheads
