@@ -140,6 +140,11 @@ Used to partition services or service resources into pools to mitigate the impac
 ### Circuit breaker
 Circuit breaker is used when system is unable to serve user requests due to internal or dependent service errors for some time, but it is important to send default response to the client instead of error message/status. In that case system uses fallback method which might return, for example response from static file or use another DB data. The pattern also used alongside with Retry, Timeout patterns, where the only usages of them can degrade system significantly or make unresponsive at all. For example, if the system is using Retry pattern but at the same time it is failing systematically - then circuit-breaker can help to increase throughput and decrease error rate/latency.
 
+It can be in one of following states:
+1. **CLOSED** - dependent service(s) are healthy and serving all the requests in normal mode.
+2. **OPEN** - dependent service(s) are unhealthy, thus service is returning fallback results (from static/config file, db, cache etc). Requests are not sent to services.
+3. **HALF-OPEN** - dependent service(s) are partially operating normally. Only sepecified portion of requests are sent to services.
+
 
 ## Three pillars of observability
 1. Metrics
