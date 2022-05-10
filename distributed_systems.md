@@ -142,8 +142,8 @@ Circuit breaker is used when system is unable to serve user requests due to inte
 
 It can be in one of following states:
 1. **CLOSED** - dependent service(s) are healthy and serving all the requests in normal mode.
-2. **OPEN** - dependent service(s) are unhealthy, thus service is returning fallback results (from static/config file, db, cache etc). Requests are not sent to services.
-3. **HALF-OPEN** - dependent service(s) are partially operating normally. Only sepecified portion of requests are sent to services.
+2. **OPEN** - dependent service(s) are unhealthy, thus the service is returning fallback results (from static/config file, db, cache etc) for the specified time or till the services are up. Requests are not sent to services.
+3. **HALF-OPEN** - dependent service(s) are partially operating normally. Only sepecified portion of requests are sent to services. The service state can also be dependent to some time or services state until they are healthy. 
 
 
 ## Three pillars of observability
