@@ -7,7 +7,7 @@
 * threads in application are abstractions provided by OS
 * there are different kinds of threads:
     1. Hardware threads
-        a. independent execution streams maintained by hardware
+            a. independent execution streams maintained by hardware
         b. used in SMT (hyper-threaded) processor cores
         c. one SMT core can execute several hardware threads
     2. Kernel (system) threads
