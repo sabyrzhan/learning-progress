@@ -23,7 +23,7 @@
     3. 1:1 - 1 user thread map to 1 kernel thread (e.g., POSIX threads)
 
 ## Atomicity vs Locks
-* **Locks/Unlocks** are used to avoid data race conditions in multithreaded app. However it is a slow process and degrades performance.
+* **Locks/Unlocks** are used to avoid data race conditions in a multithreaded app thus protecting shared data from other threads to access in unsafe manner. However it is a slow process and degrades performance.
 * **Atomicity** is light version of lock/unlock and used to perform operations (often algebraic operations) in one transaction. In contrast to locks/unlocks, atomic operations are provided by hardware.
 * **False data sharing** occurs because of cache line size. Speed of accessing/mutating one data adjacent to another data (e.g, array elements) might not differ because of cache line size.
 
