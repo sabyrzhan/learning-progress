@@ -18,7 +18,7 @@
     1. Kernel threads - is "what really happens" - independent instructions scheduled and executed by OS
     2. User threads - abstraction provided by the OS. They are executed by one or more kernel threads. There is also application threads (fibers) - abstractions provided by the application/process - is the subtype of user threads.
 * There are different threading models:
-    1. N:M - N user threads map to M kernel threads - hard or impossible to achieve
+    1. N:M - N user threads map to M kernel threads, also called hyper-threading model
     2. N:1 - N user threads map to 1 kernel thread
     3. 1:1 - 1 user thread map to 1 kernel thread (simple model)
 
