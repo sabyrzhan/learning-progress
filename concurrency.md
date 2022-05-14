@@ -20,5 +20,5 @@
 * There are different threading models:
     1. N:M - N user threads map to M kernel threads, also called hyper-threading model
     2. N:1 - N user threads map to 1 kernel thread
-    3. 1:1 - 1 user thread map to 1 kernel thread (simple model)
+    3. 1:1 - 1 user thread map to 1 kernel thread
 
