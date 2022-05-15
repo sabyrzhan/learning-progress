@@ -11,5 +11,6 @@
 - [Software engineering](software_engineering.md)
 - [Distributed systems](distributed_systems.md)
 - [Concurrency](concurrency.md)
+- [JVM](jvm.md)
 - [Desing Patterns](design_patterns.md)
 - [SQL](sql.md)
