@@ -11,7 +11,7 @@ There are 2 algorithms used by JVM used to search the dead (garbage) objects:
 
 ## HotSpot Heap Structure
 Consists from following regions:
-1. **Young generation** - stores small size and newly created objects
+1. **Young generation** - stores small size and newly created objects. It consists from S0 and S1 survivor spaces.
     1. **Eden**
     2. **S0**
     3. **S1**
