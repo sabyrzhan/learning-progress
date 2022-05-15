@@ -24,8 +24,16 @@
 
 ## Memory model
 * Concurrency needs some guarantess from compilers. It is hard or impossible to write multithreaded application without compiler support. For instance, if no support compiler can optimize regions of the code which should be thread safe by hoisting common subexpression (also called "Loop invariant code motion")
-* Memory model describes the interaction of threads through memory
+* Memory model describes the interaction of threads through memory. It includes following constraints:
+    1. Memory ordering: any guarantess for relative order of memory reads and writes?
+    2. Synchronization events: at which point memory access is synchronized?
+    3. Consistency model: what memory state is guaranteed to be seen the same by multiple threads?
 * Memory model is the property of the entire system 
+    1. Hardware has memory model
+    2. Languages also define memory model
+    3. Compiler may provide additional guarantees
+    4. Compilers avoid transformation or optimization that could violate language memory model
+    5. Compulers must use hardware features to guarantee the memory model defined by the language
 
 ## Data synchronization
 * data sharing costs more on large systems (many CPUs)
