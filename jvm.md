@@ -25,6 +25,6 @@ Heap memory - is the place of the memory where all Java objects reside. It consi
 4. **Garbage First (G1)** - 
 
 ## GC algorithms
-1. **Copy collector** - moves objects from one region to another, for example `Eden -> S0 -> S1` and frees old space for new objects
+1. **Copy collector** - moves objects from one region to another, for example `Eden -> S0 -> S1 -> OldGen` and frees old space for new objects
 2. **Mark Sweep** - 
 3. **Mark Sweep Compact** - 
