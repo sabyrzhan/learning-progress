@@ -17,3 +17,14 @@ Heap memory - is the place of the memory where all Java objects reside. It consi
     3. **S1** - then here
 2. **Old generation (aka Tenured)** - stores big size objects existing for long time. After surviving young generation objects are moved here. Big objects immediately passed to this region bypassing young generation.
 3. **Metaspace (aka PermGen in old Java)** - used by JVM for internal purposes
+
+## Garbage collectors
+1. **Scavenge GC** - 
+2. **Parallel GC** -
+3. **Concurrent Mark Sweep (CMS)** - 
+4. **Garbage First (G1)** - 
+
+## GC algorithms
+1. **Copy collector** - 
+2. **Mark Sweep** - 
+3. **Mark Sweep Compact** - 
