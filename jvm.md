@@ -15,5 +15,5 @@ Heap memory - is the place of the memory where all Java objects reside. It consi
     1. **Eden** - objects are moved first here
     2. **S0** - then here
     3. **S1** - then here
-2. **Old generation (aka Tenured)** - stores big sizes objects existing for long time. After surviving young generation objects are moved here. Big objects immediately passed to this region bypassing young generation.
+2. **Old generation (aka Tenured)** - stores big size objects existing for long time. After surviving young generation objects are moved here. Big objects immediately passed to this region bypassing young generation.
 3. **Metaspace (aka PermGen in old Java)** - used by JVM for internal purposes
