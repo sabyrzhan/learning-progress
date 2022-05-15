@@ -27,5 +27,8 @@
 * **Atomicity** is light version of lock/unlock and used to perform operations (often algebraic operations) in one transaction. In contrast to locks/unlocks, atomic operations are provided by hardware.
 * **False data sharing** occurs because of cache line size. Speed of accessing/mutating one data adjacent to another data (e.g, array elements) might not differ because of cache line size.
 
+### SpinLock
+SpinLocks use pauses to hint the CPU to give more resources to other threads by using pauses. Pauses can be implemented in various ways, for example, 1 nanosecond sleep, by sending "PAUSE" or "no-op" instructions to CPU. The pause should not take very long time but be very quick.
+
 ## Cache line size
 When CPU is instructed to read data from memory, it does not actually load only requested data, but array of data with size of **cache line size**. For example, if cache size (depends on CPU architecture) is 16 bytes and CPU is instructed to load 8 byte data, CPU in this case loads whole 16 bytes of data which also contains 8 byte data.
