@@ -18,13 +18,14 @@ Heap memory - is the place of the memory where all Java objects reside. It consi
 2. **Old generation (aka Tenured)** - stores big size objects existing for long time. After surviving young generation objects are moved here. Big objects immediately passed to this region bypassing young generation.
 3. **Metaspace (aka PermGen in old Java)** - used by JVM for internal purposes
 
-## Garbage collectors
-1. **Scavenge GC** - 
-2. **Parallel GC** -
-3. **Concurrent Mark Sweep (CMS)** - 
-4. **Garbage First (G1)** - 
-
 ## GC algorithms
 1. **Copy collector** - moves objects from one region to another, for example `Eden -> S0 -> S1 -> OldGen` and frees old space for new objects
 2. **Mark Sweep** - similar to copy collector, but it also can not to move objects to another region and mark old spaces for new objects. So old objects will remain on their own address and new objects will reside on old object addresses.
 3. **Mark Sweep Compact** - does the same as mark sweep. But additionally it defragments memory space for better object allocation.
+
+## Garbage collectors
+1. **Scavenge GC** (old) - does very operations: uses copy collector algorithm on young generation space (fast operation) and uses mark sweep company on old generation space (slow operation).
+2. **Parallel GC** -
+3. **Concurrent Mark Sweep (CMS)** - 
+4. **Garbage First (G1)** - 
+
