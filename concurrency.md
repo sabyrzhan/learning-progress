@@ -22,6 +22,11 @@
     2. N:1 - N user threads map to 1 kernel thread
     3. 1:1 - 1 user thread map to 1 kernel thread (e.g., POSIX threads)
 
+## Memory model
+* Concurrency needs some guanrantess from compilers
+* Memory model describes the interaction of threads through memory
+* Memory model is the property of the entire system 
+
 ## Data synchronization
 * data sharing costs more on large systems (many CPUs)
 * group shared variables accessed together
