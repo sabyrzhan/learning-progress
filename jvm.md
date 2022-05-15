@@ -10,10 +10,10 @@ There are 2 algorithms used by JVM used to search the dead (garbage) objects:
 * **Rechability analysis (currently used)** - currently used algorithm by JVM. The algorithm traces the objects by chain of references starting from "root" objects. The "root" is GC root here and the path from root to certain object is called "reference chain". If the object is not reachable from any "root", then the object will be considered as garbage.
 
 ## HotSpot Heap Structure
-Consists from following regions:
+Heap memory - is the place of the memory where all Java objects reside. It consists from following regions:
 1. **Young generation** - stores small size and newly created objects. It consists from eden and S0/S1 survivor spaces.
-    1. **Eden**
-    2. **S0**
-    3. **S1**
-2. **Old generation** - stores big sizes objects existing for long time
+    1. **Eden** - objects are moved first here
+    2. **S0** - then here
+    3. **S1** - then here
+2. **Old generation (aka Tenured)** - stores big sizes objects existing for long time. After surviving young generation objects are moved here. Big objects immediately passed to this region bypassing young generation.
 3. **Metaspace (aka PermGen in old Java)** - used by JVM for internal purposes
