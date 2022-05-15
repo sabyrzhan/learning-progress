@@ -6,5 +6,5 @@ JVM starts 2 threads for garbage collection:
 
 ## Search Thread
 There are 2 algorithms used by JVM used to search the dead (garbage) objects:
-* Reference counter (old) - this algorithm was initially used to search garbage. It is simple to implement and understand, but does not solve object's circular references. Every time object is used by another object, object's reference is increased or decreased otherwise. If the counter is equal to 0, then the object is considered as garbage.
-* Rechability analysis (currently used) - currently used algorithm by JVM. The algorithm traces the objects by chain of references starting from "root" objects. The "root" is GC root here and the path from root to certain object is called "reference chain". If the object is not reachable from any "root", then the object will be considered as garbage.
+* **Reference counter (old)** - this algorithm was initially used to search garbage. It is simple to implement and understand, but it does not solve object's circular references. Every time object is used by another object, object's reference is increased or decreased by 1. If the counter is equal to 0, then the object is considered as garbage.
+* **Rechability analysis (currently used)** - currently used algorithm by JVM. The algorithm traces the objects by chain of references starting from "root" objects. The "root" is GC root here and the path from root to certain object is called "reference chain". If the object is not reachable from any "root", then the object will be considered as garbage.
