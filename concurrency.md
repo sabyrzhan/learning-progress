@@ -22,6 +22,15 @@
     2. N:1 - N user threads map to 1 kernel thread
     3. 1:1 - 1 user thread map to 1 kernel thread (e.g., POSIX threads)
 
+## Data synchronization
+* data sharing costs more on large systems (many CPUs)
+* group shared variables accessed together
+* mutexes are easy to use but have high overhead
+* spinlocks have low overhead if waiting time is short
+* spinlocks must use nanoseconds or another pause
+* spinlocks can use existing shared data as access tokens
+* atomic operations can sometimes replace locks
+
 ## Atomicity vs Locks
 * **Locks/Unlocks** are used to avoid data race conditions in a multithreaded app thus protecting shared data from other threads to access in unsafe manner. However it is a slow process and degrades performance.
 * **Atomicity** is light version of lock/unlock and used to perform operations (often algebraic operations) in one transaction. In contrast to locks/unlocks, atomic operations are provided by hardware.
