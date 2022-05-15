@@ -26,6 +26,6 @@ Heap memory - is the place of the memory where all Java objects reside. It consi
 ## Garbage collectors
 1. **Scavenge/Serial GC** (old) - does very simple operations: uses copy collector algorithm on young generation space (fast operation) and uses mark sweep compact on old generation space (slow operation).
 2. **Parallel GC** (old but can used as default on client JVMs) - does the same operation as Scavange GC, but using multiple threads. Threads can be defined by flag or use the same amount as CPU which is used by default.
-3. **Concurrent Mark Sweep (CMS)** (old) - it uses mulitple steps to search garbage and then delete the gargbage. It uses multiple JVM pauses to search for objects and mark them and then concurrently removes garbages at real time.
-4. **Garbage First (G1)** - it divides memory regions into multiple subregions so multiple GCs can clean each region faster and independently. It does multiple stop-the-worlds for marking regions and concurrently searches the garbage. And only after that cleanes the garbage. 
+3. **Concurrent Mark Sweep (CMS)** (old) - it uses mulitple steps to search garbage and then delete the gargbage. It uses multiple JVM pauses to search for objects and mark them and then concurrently removes garbages at real time. 
+4. **Garbage First (G1)** - it divides memory regions into multiple subregions so multiple GCs can clean each region faster and independently. It does multiple stop-the-worlds for marking regions and concurrently searches the garbage. And only after that cleanes the garbage. Usecase: in systems with large memory but small objects.
 
