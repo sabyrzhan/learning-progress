@@ -40,4 +40,4 @@
 SpinLocks use pauses to hint the CPU to give more resources to other threads by using pauses. Pauses can be implemented in various ways, for example, 1 nanosecond sleep, by sending "PAUSE" or "no-op" instructions to CPU. The pause should not take very long time but be very quick.
 
 ## Cache line size
-When CPU is instructed to read data from memory, it does not actually load only requested data, but array of data with size of **cache line size**. For example, if cache size (depends on CPU architecture) is 16 bytes and CPU is instructed to load 8 byte data, CPU in this case loads whole 16 bytes of data which also contains 8 byte data.
+When CPU is instructed to read data from memory, it does not actually load only requested data, but array of data with size of **cache line size**. For example, if cache size (depends on CPU architecture) is 16 bytes and CPU is instructed to load 8 byte data, CPU in this case loads whole 16 bytes of data which also contains 8 byte data. This means that 2 independent shared variables on the same cache line behave as if they were shared.
