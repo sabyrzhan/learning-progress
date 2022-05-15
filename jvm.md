@@ -24,7 +24,7 @@ Heap memory - is the place of the memory where all Java objects reside. It consi
 3. **Mark Sweep Compact** - does the same as mark sweep. But additionally it defragments memory space for better object allocation.
 
 ## Garbage collectors
-1. **Scavenge GC** (old) - does very operations: uses copy collector algorithm on young generation space (fast operation) and uses mark sweep company on old generation space (slow operation).
+1. **Scavenge GC** (old) - does very simple operations: uses copy collector algorithm on young generation space (fast operation) and uses mark sweep compact on old generation space (slow operation).
 2. **Parallel GC** -
 3. **Concurrent Mark Sweep (CMS)** - 
 4. **Garbage First (G1)** - 
