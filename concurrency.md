@@ -26,8 +26,11 @@
 * Concurrency needs some guarantess from compilers. It is hard or impossible to write multithreaded application without compiler support. For instance, if no support compiler can optimize regions of the code which should be thread safe by hoisting common subexpression (also called "Loop invariant code motion")
 * Memory model describes the interaction of threads through memory. It includes following constraints:
     1. Memory ordering: any guarantess for relative order of memory reads and writes?
-    2. Synchronization events: at which point memory access is synchronized?
-    3. Consistency model: what memory state is guaranteed to be seen the same by multiple threads?
+        1. For example can READ and WRITE operations be ordered?
+            1. on X86 - WR can be reordered (RR, WW, RW are ordered)
+            2. on ARM - on the operations can be reordered
+    3. Synchronization events: at which point memory access is synchronized?
+    4. Consistency model: what memory state is guaranteed to be seen the same by multiple threads?
 * Memory model is the property of the entire system 
     1. Hardware has memory model
     2. Languages also define memory model
