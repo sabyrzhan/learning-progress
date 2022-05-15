@@ -23,7 +23,7 @@
     3. 1:1 - 1 user thread map to 1 kernel thread (e.g., POSIX threads)
 
 ## Memory model
-* It is hard or impossible to write multithreaded application without compiler support. For instance, if no support compiler can optimize regions of the code which should be thread safe by hoisting common subexpression (also called "Loop invariant code motion")
+* Concurrency needs some guarantess from compilers. It is hard or impossible to write multithreaded application without compiler support. For instance, if no support compiler can optimize regions of the code which should be thread safe by hoisting common subexpression (also called "Loop invariant code motion")
 * Memory model describes the interaction of threads through memory
 * Memory model is the property of the entire system 
 
