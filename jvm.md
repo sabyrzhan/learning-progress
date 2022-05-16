@@ -35,3 +35,9 @@ Used to analyze the GC statistics and heap usage. For example, GC runs, heap siz
 * `-XX:StartFlightRecording=filename=rec.jfr` - to save the file to disk
 
 After generating the file you can read it using one of the profilers or mission control center, for example Azul Mission Control.
+
+## JVM Flags
+### `OutOfMemory` flags
+1. `-XX:HeapDumpPath=<file_path>.hprof` - heap dump to file
+2. `-XX:OnOutOfMemoryError="<command_to_execute>"` - execute shell cmd on OOM
+3. `-XX:+UseGCOverheadLimit` - enables the limit for excessive usage, where if 98% of time is spent for garbage collection and 2% only is being recovered then `OutOfMemoryException` will be thrown.
