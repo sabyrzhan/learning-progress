@@ -8,6 +8,7 @@
 - [K8s](k8s.md)
 - [Math](math.md)
 - [Linux](linux.md)
+- [SRE](sre.md)
 - [Software engineering](software_engineering.md)
 - [Distributed systems](distributed_systems.md)
 - [Concurrency](concurrency.md)
