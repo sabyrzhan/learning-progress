@@ -40,4 +40,4 @@ After generating the file you can read it using one of the profilers or mission 
 ### `OutOfMemory` flags
 1. `-XX:HeapDumpPath=<file_path>.hprof` - heap dump to file
 2. `-XX:OnOutOfMemoryError="<command_to_execute>"` - execute shell cmd on OOM
-3. `-XX:+UseGCOverheadLimit` - enables the limit for excessive usage, where if 98% of time is spent for garbage collection and 2% only is being recovered then `OutOfMemoryException` will be thrown.
+3. `-XX:+UseGCOverheadLimit` - if you are setting heapdump, usage of this option is encauraged, because it increases the change of dumping the heap memory before shutting down the JVM because of OOM. It throws `OutOfMemoryException` when 98% of time is spent for garbage collection and 2% only is being recovered.
