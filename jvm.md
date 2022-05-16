@@ -30,7 +30,7 @@ Heap memory - is the place of the memory where all Java objects reside. It consi
 4. **Garbage First (G1)** - it divides memory regions into multiple subregions so multiple GCs can clean each region faster and independently. It does multiple stop-the-worlds for marking regions and concurrently searches the garbage. And only after that cleanes the garbage. Usecase: in systems with large memory but small objects.
 
 ## JFR - Java Flight Recorder
-Used to analyze the GC statistics and heap usage. What it actually does is: writes the statistics to file or memory while application is runnings for specified time. After the time is elapsed, it will write to `.jfr` file to specified path. To start the recording you have to pass following VM option when running the application:
+Used to analyze the GC statistics and heap usage. For example, GC runs, heap size before and after GC run, VM options and other statistics. What it actually does is: writes the statistics to file or memory while application is runnings for specified time. After the time is elapsed, it will write to `.jfr` file to specified path. To start the recording you have to pass following VM option when running the application:
 * `-XX:StartFlightRecording=disk=false,filename=rec.jfr` - to write the file to memory
 * `-XX:StartFlightRecording=filename=rec.jfr` - to save the file to disk
 
