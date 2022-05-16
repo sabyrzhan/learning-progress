@@ -1,6 +1,8 @@
 # SRE
 ## SLI, SLO, SLA
-- **SLI (Service Layer Indicator)** - defined quantitative measure of some aspect of service that is provided and focused on customer experience within a moment of time. F.e., latency, RPS, percentiles etc.
+- **SLI (Service Layer Indicator)** - defined quantitative measure of some aspect of service that is provided and focused on customer experience within a moment of time.
+    1. SLIs: latency, RPS, percentiles etc.
+    2. Non-SLIs: CPU utilization, network and memory usage etc
 - **SLO (Service Layer Objective)** - target value or range of values for a
   service which are measured by SLI. F.e., latency <= 10s,
   yearly uptime <= 99.99%
