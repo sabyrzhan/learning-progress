@@ -2,7 +2,7 @@
 ## Flow
 Request flow looks following:
 
-`User -> Authentication filter -> Authentication manager -> Authentication provider (uses User details service and password encoder/decoder)`
+`User -> Authentication filter -> Authentication manager -> Authentication provider (uses User details service and password encoder)`
 
 1. Authentication filter - component that checks wether request is authenticated.
 2. Authentication manager - holds needed authentication provider
