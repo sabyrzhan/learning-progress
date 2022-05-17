@@ -73,3 +73,17 @@ There should be minimum three extending classes of interface or abstract class t
 2. search for similar behaviors in other places
 3. apply "rule of three" principle
 
+## 12 factor app
+12 guidelines or rules used when designing a (micro)service.
+1. **Codebase** - it has its own repository
+2. **Dependencies** - depenencies has to be resolved automatically and must be reproducable (e.g., `pom.xml` file in `maven` or `requirements.txt` file in `python`)
+3. **Config** - service configurations must be passed externally and not hardcoded.
+4. **Backing services** - microservices should not depend on each others location for lookup, but rather use service discovery which provides the lookup. 
+5. **Build, Release and Run** - each microservice version must have its own lifecycle from building to running stage.
+6. **Processes** - microservices must be stateless
+7. **Port Binding** - service has to be service running and does not depend on external runtime environment.
+8. **Concurrency** - microservices must use threads or fibers for concurrency, but must not produce other processes for serving requests.
+9. **Disposability** - microservices should have ability to be stopped/started and be scaled quickly.
+10. **Dev/Prod Parity** - service should behave the same on any environments
+11. **Logs** - use logs as streams
+12. **Admin processes** - service must not be responsible for administration tasks, but be managed or monitored via external processes.
