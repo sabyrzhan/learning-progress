@@ -1,6 +1,7 @@
 # Spring Security
 ## Flow
 Request flow looks following:
+
 `User request -> Authentication filter -> Authentication manager -> Authentication provider (uses User details service and password encoder/decoder)`
 
 1. Authentication filter - component that checks wether request is authenticated.
@@ -10,6 +11,7 @@ Request flow looks following:
     2. `PasswordEncoder` - used to validate user password if used.
 
 After validating the response propogates back to user in the following flow:
+
 `Authentication provider -> Authentication manager -> Authentication filter (uses AuthenticationSuccessHandler or AuthenticationFailureHandler depending on the result) -> User
 
 Here `AuthenticationFilter` invokes one of the following functions depending on the result:
