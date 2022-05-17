@@ -75,7 +75,7 @@ There should be minimum three extending classes of interface or abstract class t
 
 ## 12 factor app
 12 guidelines or rules used when designing a (micro)service.
-1. **Codebase** - it has its own repository
+1. **Codebase** - it must have its own repository
 2. **Dependencies** - depenencies has to be resolved automatically and must be reproducable (e.g., `pom.xml` file in `maven` or `requirements.txt` file in `python`)
 3. **Config** - service configurations must be passed externally and not hardcoded.
 4. **Backing services** - microservices should not depend on each others location for lookup, but rather use service discovery which provides the lookup. 
