@@ -8,7 +8,7 @@ From this definition I can say that architecture itself consists from designs of
 ## SOLID principle
 1. S - Single-Responsibility Principle
     1. Each class/function should have single respinsibility or reason to change
-    2. Strive for high cohesion (putting related methods in one single place) and loose coupling (seperating different functionalities to into multiple classes)
+    2. Strive for high cohesion (putting related methods in one single place) and loose coupling (seperating different functionalities into multiple classes)
     3. Keep classes/functions small and testable
 2. O - Open-Closed Principle
     1. Meaning: open for extension, closed for modification
