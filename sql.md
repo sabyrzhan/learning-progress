@@ -28,10 +28,3 @@ It has following read phenomenas:
 Partitioning - Dividing large table into seperate tables within one instance of the SQL service.<br>
 Sharding - the same as partitioning, but in different service instances.<br>
 By partitioning not only the table is data is divided, but also table indexes, thus improving the performance.<br>
-
-## PostgreSQL
-### Quickly generate data
-For example, to generate 1 000 000 records in table `temp(value int)`:
-```
-insert into temp(value) select random() * 100 from generate_series(0, 1000000);
-```
