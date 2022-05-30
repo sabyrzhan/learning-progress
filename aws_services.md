@@ -9,3 +9,6 @@ Useful resources:
 ### VPC
 Useful resources:
 1. [AWS VPC Core Concepts in an Analogy and Guide](https://start.jcolemorrison.com/aws-vpc-core-concepts-analogy-guide/)
+
+### ECS
+1. [Guide to Fault Tolerant and Load Balanced AWS Docker Deployment on ECS](https://start.jcolemorrison.com/guide-to-fault-tolerant-and-load-balanced-aws-docker-deployment-on-ecs/)
