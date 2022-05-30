@@ -1,5 +1,9 @@
-# Spring Security
-## Flow
+# Spring
+## Spring Boot vs Spring Cloud
+1. [Spring boot vs Spring Cloud](https://www.educba.com/spring-cloud-vs-spring-boot/)
+
+## Spring Security
+### Flow
 Request flow looks following:
 
 `User -> Authentication filter -> Authentication manager -> Authentication provider (uses User details service and password encoder)`
