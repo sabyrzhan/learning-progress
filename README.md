@@ -19,3 +19,4 @@
   - [Spring Security](spring_security.md)
 - AWS
   - [AWS Lambda](aws_lambda.md)
+- [Java libraries and frameworks](java_fx_and_libs.md)
