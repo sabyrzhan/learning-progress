@@ -145,6 +145,9 @@ It can be in one of following states:
 2. **OPEN** - dependent service(s) are unhealthy, thus the service is returning fallback results (from static/config file, db, cache etc) for the specified time or till the services are up. Requests are not sent to services.
 3. **HALF-OPEN** - dependent service(s) are partially operating normally. Only sepecified portion of requests are sent to services. The service state can also be dependent to some time or services state until they are healthy. 
 
+### Backpressure
+Pattern is applied to limit the load. Often times it is applied in a system where unbounded queues are used. When the queues are unbounded load always comes to consumers. So the first rule is queue should be bounded.
+
 
 ## Three pillars of observability
 1. Metrics
