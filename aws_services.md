@@ -12,7 +12,7 @@ Useful resources:
 
 ### ECS
 1. [Guide to Fault Tolerant and Load Balanced AWS Docker Deployment on ECS](https://start.jcolemorrison.com/guide-to-fault-tolerant-and-load-balanced-aws-docker-deployment-on-ecs/)
+2. [Blox](https://blox.github.io/)
 
 ### IAM
 1. [AWS IAM Policies in a Nutshell](https://start.jcolemorrison.com/aws-iam-policies-in-a-nutshell/)
-2. [Blox](https://blox.github.io/)
