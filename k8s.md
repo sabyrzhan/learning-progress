@@ -58,6 +58,10 @@ There are 2 ways to create EKS cluster:
 ## Create manually
 TODO
 
+## Persistent Volumes (PV)
+### Resources
+1. [Kubernetes Persistent Volumes (PV) and the Persistent Volume Lifecycle](https://cloud.netapp.com/blog/kubernetes-persistent-storage-why-where-and-how)
+
 ## Create using `eksctl` tool
 1. Install `eksctl` as described [here](https://github.com/weaveworks/eksctl). For example, with brew:
 ```
