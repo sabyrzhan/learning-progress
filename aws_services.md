@@ -5,6 +5,7 @@ Useful resources:
 2. [AWS Lambda sync and async invokation types](https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke.html)
 3. [Customizing HTTP API access logs in API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-logging-variables.html)
 4. [Set up an integration response in API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-integration-settings-integration-response.html)
+5. [Working with AWS Lambda proxy integrations for HTTP APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-integrations-lambda.html)
 
 ### VPC
 Useful resources:
