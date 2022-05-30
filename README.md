@@ -17,7 +17,6 @@
 - [SQL](sql.md)
 - Spring
   - [Spring Security](spring_security.md)
-- AWS
-  - [AWS Lambda](aws_lambda.md)
+- [AWS Services](aws_services.md) 
 - [Java libraries and frameworks](java_fx_and_libs.md)
 - [Python](python.md)
