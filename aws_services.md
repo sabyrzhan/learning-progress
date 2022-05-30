@@ -15,3 +15,4 @@ Useful resources:
 
 ### IAM
 1. [AWS IAM Policies in a Nutshell](https://start.jcolemorrison.com/aws-iam-policies-in-a-nutshell/)
+2. [Blox](https://blox.github.io/)
