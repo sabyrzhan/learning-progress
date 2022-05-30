@@ -20,3 +20,4 @@ Useful resources:
 
 ### DynamoDB
 1. [DynamoDB pagination](https://dynobase.dev/dynamodb-pagination/)
+2. [DynamoDBMapper Query Examples (DynamoDB Java Cheat Sheet)](https://dynobase.dev/dynamodb-java-with-dynamodbmapper/)
