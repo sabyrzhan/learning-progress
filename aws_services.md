@@ -17,3 +17,6 @@ Useful resources:
 
 ### IAM
 1. [AWS IAM Policies in a Nutshell](https://start.jcolemorrison.com/aws-iam-policies-in-a-nutshell/)
+
+### DynamoDB
+1. [DynamoDB pagination](https://dynobase.dev/dynamodb-pagination/)
