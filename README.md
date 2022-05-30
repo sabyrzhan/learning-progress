@@ -15,8 +15,7 @@
 - [JVM](jvm.md)
 - [Desing Patterns](design_patterns.md)
 - [SQL](sql.md)
-- Spring
-  - [Spring Security](spring_security.md)
+- [Spring](spring.md)
 - [AWS Services](aws_services.md) 
 - [Java libraries and frameworks](java_fx_and_libs.md)
 - [Python](python.md)
