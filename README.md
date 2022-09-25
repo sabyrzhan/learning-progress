@@ -21,5 +21,5 @@
 - [Python](python.md)
 - [GIT](git.md)
 - Apple
-  - [XCode](xcode.md)
+  - [XCode](apple/xcode.md)
   - [Swift](apple/swift.md)
