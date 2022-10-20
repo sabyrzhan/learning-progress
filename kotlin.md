@@ -104,4 +104,9 @@ nullableName = null // OK
 var len = name.length
 var nullableLength = nullableName?.length
 println("Len: $len, nullableLen: $nullableLen")
+
+// Safecall operator with let
+nullableName?.let {
+  println("Nullable length is: ${nullableName.length}")
+}
 ```
