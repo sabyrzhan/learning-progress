@@ -12,7 +12,7 @@ val str = "Some string"
 print("This is the string $str and its length is ${str.length}")
 ```
 3. `switch/case` like statement in Kotlin is `when`. Unlike `switch/case` in other languages it has various ways of handling the conditions:
-```$kotlin
+```
 // Example 1
 var season = 3
 when (season) {
