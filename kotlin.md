@@ -85,3 +85,10 @@ for (num in 1.rangeTo(10).step(2)) {
   println("Method way 2: $it")
 }
 ```
+5. Function/method signature
+```
+// Example
+fun add(a: Int, b: Int): Int {
+    return a + b
+}
+```
