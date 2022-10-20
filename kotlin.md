@@ -97,6 +97,11 @@ fun add(a: Int, b: Int): Int {
 // Example
 var name: String = "Name"
 // name = null  <-- Compilation error
+
 var nullableName: String? = "Nullable name"
 nullableName = null // OK
+
+var len = name.length
+var nullableLength = nullableName?.length
+println("Len: $len, nullableLen: $nullableLen")
 ```
