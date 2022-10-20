@@ -92,3 +92,11 @@ fun add(a: Int, b: Int): Int {
     return a + b
 }
 ```
+6. Nullables
+```
+// Example
+var name: String = "Name"
+// name = null  <-- Compilation error
+var nullableName: String? = "Nullable name"
+nullableName = null // OK
+```
