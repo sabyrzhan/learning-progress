@@ -41,7 +41,7 @@ var age = 21
 when (age) {
   !in 0..20 -> println("now you may drink in the US")
   in 18..20 -> println("you may vote now")
-  in 16,17 -> println("you may drive now")
+  16,17 -> println("you may drive now")
   else -> println("you're too young")
 }
 
