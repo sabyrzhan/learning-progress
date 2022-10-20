@@ -13,6 +13,7 @@
 - [Distributed systems](distributed_systems.md)
 - [Concurrency](concurrency.md)
 - [JVM](jvm.md)
+- [Kotlin](kotlin.md)
 - [Desing Patterns](design_patterns.md)
 - [SQL](sql.md)
 - [Spring](spring.md)
