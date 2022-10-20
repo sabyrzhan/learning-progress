@@ -54,3 +54,34 @@ when (x) {
   else -> println("$x is none of the above")
 }
 ```
+4. `for` loop
+```
+// Example 1
+for (num in 1..5) {
+  println("Simple $num")
+}
+
+// Example 2 (excludes 10)
+for (num in 1 until 10) {
+  println("Until: $num")
+}
+
+// Example 3
+for (num in 10 downTo 1) {
+  println("Downto: $num")
+}
+
+// Example 4 with step
+for (num in 1..10 step 2) {
+  println("With step: $num")
+}
+
+// Example 5 as method way 1
+for (num in 1.rangeTo(10).step(2)) {
+  println("Method way 1: $num")
+}
+
+1.rangeTo(10).step(2).forEach {
+  println("Method way 2: $it")
+}
+```
