@@ -110,3 +110,14 @@ nullableName?.let {
   println("Nullable length is: ${nullableName.length}")
 }
 ```
+7. Elvis operator
+```
+// Example
+var nullableName: String? = "Name"
+var nonNullableName = nullableName ?: "guest"
+```
+8. Not-Null assertion operator `!!`
+```
+var nullableName: String? = "Name"
+var expectedNotNullName = nullableName!!
+```
