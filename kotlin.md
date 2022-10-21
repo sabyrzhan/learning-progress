@@ -121,3 +121,17 @@ var nonNullableName = nullableName ?: "guest"
 var nullableName: String? = "Name"
 var expectedNotNullName = nullableName!!
 ```
+9. Class with constructor and initializer
+```
+// Example: defining class with constructor with default values and initializer
+class Person constructor(name: String = "DEFAULT_NAME", surname: String = "DEFAULT_SURNAME") {
+  init {
+    println("This block is executed once object is created")
+  }
+}
+
+val person = Person("Name", "Surname")
+val defaultPerson = Person()
+val personWithName = Person(name = "Anothername")
+val personWithSurname = Person(surname = "Anothersurname")
+```
