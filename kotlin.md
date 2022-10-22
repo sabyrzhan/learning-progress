@@ -135,3 +135,11 @@ val defaultPerson = Person()
 val personWithName = Person(name = "Anothername")
 val personWithSurname = Person(surname = "Anothersurname")
 ```
+10. Shadowing
+```
+// The parameter variable is immutable. To set the value it must be redefined thus overriding parameter value
+fun add(a: Int, b: Int): Int {
+  var a = 100
+  return a + b
+}
+```
