@@ -1,17 +1,17 @@
 # Kotlin lang
-1. Immutable and mutable variable declarations:
+### Immutable and mutable variable declarations
 ```
 // This is the immutable variable
 val value = "This is the immutable"
 // This is the mutable variable
 var value2 = "This is the variable"
 ```
-2. String interpolation with variable value and expression
+### String interpolation with variable value and expression
 ```
 val str = "Some string"
 print("This is the string $str and its length is ${str.length}")
 ```
-3. `switch/case` like statement in Kotlin is `when`. Unlike `switch/case` in other languages it has various ways of handling the conditions:
+### `switch/case` like statement in Kotlin is `when`. Unlike `switch/case` in other languages it has various ways of handling the conditions:
 ```
 // Example 1
 var season = 3
@@ -54,7 +54,7 @@ when (x) {
   else -> println("$x is none of the above")
 }
 ```
-4. `for` loop
+### `for` loop
 ```
 // Example 1
 for (num in 1..5) {
@@ -92,7 +92,7 @@ fun add(a: Int, b: Int): Int {
     return a + b
 }
 ```
-6. Nullables
+### Nullables
 ```
 // Example
 var name: String = "Name"
@@ -116,7 +116,7 @@ nullableName?.let {
 var nullableName: String? = "Name"
 var nonNullableName = nullableName ?: "guest"
 ```
-8. Not-Null assertion operator `!!`
+### Not-Null assertion operator `!!`
 ```
 var nullableName: String? = "Name"
 var expectedNotNullName = nullableName!!
@@ -135,7 +135,7 @@ val defaultPerson = Person()
 val personWithName = Person(name = "Anothername")
 val personWithSurname = Person(surname = "Anothersurname")
 ```
-10. Shadowing
+### Shadowing
 ```
 // The parameter variable is immutable. To set the value it must be redefined thus overriding parameter value
 fun add(a: Int, b: Int): Int {
