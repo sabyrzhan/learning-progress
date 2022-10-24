@@ -143,3 +143,32 @@ fun add(a: Int, b: Int): Int {
   return a + b
 }
 ```
+### Secondary constructor
+```
+// Example:
+// Primary constructor
+// If you put var/val modifier to parameters then member fields with the same name will be defined. Otherwise they are used only in `init`
+class Car(var make: String, var model: String) {
+    // Secondary constructor. Always must inherit primary constructor
+    constructor(): this("NONAME_MAKE", "NONAME_MODEL") {
+    }
+
+    fun printDetails() {
+        println("Make is ${this.make} and model is ${this.model}")
+    }
+}
+
+class Animal(name: String) {
+    var name: String? = null
+    
+    // To add logic to promary constructor, you must always define `init`
+    init {
+        println("Initializing animal with name=$name")
+        this.name = name
+    }
+
+    fun printDetails() {
+        println("Animal is $name")
+    }
+}
+
