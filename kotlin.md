@@ -171,7 +171,7 @@ class Animal(name: String) {
         println("Animal is $name")
     }
 }
-
+```
 ### `getter/setter`
 ```
 // Example
