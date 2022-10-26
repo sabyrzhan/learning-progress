@@ -189,3 +189,8 @@ class Car {
   }
 }
 ```
+### Data classes
+```
+// Example. Data classes must have at least 1 parameter in a constructor
+data class User(id: Int, name: String)
+```
