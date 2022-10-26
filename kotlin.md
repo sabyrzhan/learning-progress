@@ -172,3 +172,20 @@ class Animal(name: String) {
     }
 }
 
+### `getter/setter`
+```
+// Example
+class Car {
+  var make: String? = null
+  get() = field.lowercase()
+  set(value) {
+    field = "updated: $value"
+  }
+  
+  var model: String? = null
+  get() = "Value is: $field"
+  set(value) {
+    field = "model is: $value"
+  }
+}
+```
