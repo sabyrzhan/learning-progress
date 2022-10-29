@@ -215,4 +215,4 @@ There are 2 types of collections: same type and different type collections.
 `IntArray`, `BooleanArray`, `ByteArray`, `FloatArray`, `LongArray` etc. Also created using `arrayOf<CLASS>(value1, value2, ...)`
 
 ### Different array collections
-Created using `array(values)` function. For example, `array(1, "2', "tree", 4.0)`
+Created using `array(values)` function. For example, `array(1, "2', "tree", 4.0)`. Take into account the collections created this way are immutable.
