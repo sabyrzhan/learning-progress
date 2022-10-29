@@ -1,6 +1,9 @@
 [{:block/name "a",
   :block/created-at 1667059882140,
   :block/updated-at 1667059882140}
+ {:block/name "access modifiers",
+  :block/created-at 1667065309190,
+  :block/updated-at 1667065309190}
  {:block/name "aws services",
   :block/created-at 1667059301694,
   :block/updated-at 1667059301694}
@@ -22,6 +25,12 @@
  {:block/name "card",
   :block/created-at 1667059882140,
   :block/updated-at 1667059882140}
+ {:block/name "casting",
+  :block/created-at 1667067315263,
+  :block/updated-at 1667067315263}
+ {:block/name "classes",
+  :block/created-at 1667065952441,
+  :block/updated-at 1667065952441}
  {:block/name "collections",
   :block/created-at 1667060943625,
   :block/updated-at 1667060943625}
@@ -55,6 +64,9 @@
  {:block/name "excel",
   :block/created-at 1667059301826,
   :block/updated-at 1667059301826}
+ {:block/name "exceptions",
+  :block/created-at 1667068145441,
+  :block/updated-at 1667068145441}
  {:block/name "favorites",
   :block/created-at 1667059882140,
   :block/updated-at 1667059882140}
@@ -85,6 +97,9 @@
  {:block/name "in-progress",
   :block/created-at 1667059882140,
   :block/updated-at 1667059882140}
+ {:block/name "inheritance",
+  :block/created-at 1667067242214,
+  :block/updated-at 1667067242214}
  {:block/name "java libraries and frameworks",
   :block/created-at 1667059301695,
   :block/updated-at 1667059301695}
@@ -102,7 +117,10 @@
   :block/updated-at 1667060860259}
  {:block/name "kotlin language",
   :block/created-at 1667060486196,
-  :block/updated-at 1667063886256}
+  :block/updated-at 1667068347931}
+ {:block/name "lambda",
+  :block/created-at 1667064497556,
+  :block/updated-at 1667064497556}
  {:block/name "later",
   :block/created-at 1667059882140,
   :block/updated-at 1667059882140}
@@ -112,21 +130,33 @@
  {:block/name "loan",
   :block/created-at 1667059301883,
   :block/updated-at 1667059301883}
+ {:block/name "logseq learning",
+  :block/created-at 1667064293129,
+  :block/updated-at 1667064293129}
  {:block/name "math",
   :block/created-at 1667059301980,
   :block/updated-at 1667059301980}
  {:block/name "mutable collections",
   :block/created-at 1667063874683,
   :block/updated-at 1667063874683}
+ {:block/name "nested and inner classes",
+  :block/created-at 1667065990595,
+  :block/updated-at 1667065990595}
  {:block/name "now",
   :block/created-at 1667059882140,
   :block/updated-at 1667059882140}
  {:block/name "oct 29th, 2022",
   :block/created-at 1667059301650,
-  :block/updated-at 1667060677684}
+  :block/updated-at 1667064293129}
+ {:block/name "oct 30th, 2022",
+  :block/created-at 1667066400867,
+  :block/updated-at 1667066400867}
  {:block/name "oop",
-  :block/created-at 1667060932794,
-  :block/updated-at 1667060932794}
+  :block/created-at 1667065952440,
+  :block/updated-at 1667065952440}
+ {:block/name "open class",
+  :block/created-at 1667066390782,
+  :block/updated-at 1667066390782}
  {:block/name "python",
   :block/created-at 1667059301992,
   :block/updated-at 1667059301992}
