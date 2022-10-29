@@ -207,3 +207,12 @@ class Toyota(make: String, model: String): Car(make, model) {
   override fun drive() { }
 }
 ```
+
+### Collections
+There are 2 types of collections: same type and different type collections.
+
+#### Same type collection classses
+`IntArray`, `BooleanArray`, `ByteArray`, `FloatArray`, `LongArray` etc. Also created using `arrayOf<CLASS>(value1, value2, ...)`
+
+### Different array collections
+Created using `array(values)` function. For example, `array(1, "2', "tree", 4.0)`
