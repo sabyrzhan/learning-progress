@@ -194,3 +194,16 @@ class Car {
 // Example. Data classes must have at least 1 parameter in a constructor
 data class User(id: Int, name: String)
 ```
+
+### Inheritence
+Use `override` modifier when overriding method
+```
+//Example
+class Car(make: String, model: String) {
+  fun drive() { }
+}
+
+class Toyota(make: String, model: String): Car(make, model) {
+  override fun drive() { }
+}
+```
