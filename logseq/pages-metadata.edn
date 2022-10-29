@@ -1,4 +1,7 @@
-[{:block/name "a",
+[{:block/name "@escaping",
+  :block/created-at 1667071130753,
+  :block/updated-at 1667071130753}
+ {:block/name "a",
   :block/created-at 1667059882140,
   :block/updated-at 1667059882140}
  {:block/name "access modifiers",
@@ -31,6 +34,9 @@
  {:block/name "classes",
   :block/created-at 1667065952441,
   :block/updated-at 1667065952441}
+ {:block/name "closures",
+  :block/created-at 1667069599112,
+  :block/updated-at 1667069599112}
  {:block/name "collections",
   :block/created-at 1667060943625,
   :block/updated-at 1667060943625}
@@ -100,6 +106,9 @@
  {:block/name "inheritance",
   :block/created-at 1667067242214,
   :block/updated-at 1667067242214}
+ {:block/name "interfaces",
+  :block/created-at 1667068934375,
+  :block/updated-at 1667068934375}
  {:block/name "java libraries and frameworks",
   :block/created-at 1667059301695,
   :block/updated-at 1667059301695}
@@ -117,7 +126,7 @@
   :block/updated-at 1667060860259}
  {:block/name "kotlin language",
   :block/created-at 1667060486196,
-  :block/updated-at 1667068347931}
+  :block/updated-at 1667068388554}
  {:block/name "lambda",
   :block/created-at 1667064497556,
   :block/updated-at 1667064497556}
@@ -147,10 +156,10 @@
   :block/updated-at 1667059882140}
  {:block/name "oct 29th, 2022",
   :block/created-at 1667059301650,
-  :block/updated-at 1667064293129}
+  :block/updated-at 1667068951885}
  {:block/name "oct 30th, 2022",
   :block/created-at 1667066400867,
-  :block/updated-at 1667066400867}
+  :block/updated-at 1667069599113}
  {:block/name "oop",
   :block/created-at 1667065952440,
   :block/updated-at 1667065952440}
@@ -181,6 +190,12 @@
  {:block/name "swift",
   :block/created-at 1667059301710,
   :block/updated-at 1667059301710}
+ {:block/name "swift closure syntax",
+  :block/created-at 1667070650343,
+  :block/updated-at 1667070650343}
+ {:block/name "swift language",
+  :block/created-at 1667069579407,
+  :block/updated-at 1667071330336}
  {:block/name "todo",
   :block/created-at 1667059882140,
   :block/updated-at 1667059882140}
