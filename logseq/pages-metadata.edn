@@ -1,7 +1,4 @@
-[{:block/name "@escaping",
-  :block/created-at 1667071130753,
-  :block/updated-at 1667071130753}
- {:block/name "a",
+[{:block/name "a",
   :block/created-at 1667059882140,
   :block/updated-at 1667059882140}
  {:block/name "access modifiers",
@@ -109,9 +106,21 @@
  {:block/name "interfaces",
   :block/created-at 1667068934375,
   :block/updated-at 1667068934375}
+ {:block/name "java 19",
+  :block/created-at 1667147236953,
+  :block/updated-at 1667147236953}
+ {:block/name "java language",
+  :block/created-at 1667147158592,
+  :block/updated-at 1667149512273}
  {:block/name "java libraries and frameworks",
   :block/created-at 1667059301695,
   :block/updated-at 1667059301695}
+ {:block/name "java pattern matching",
+  :block/created-at 1667147769556,
+  :block/updated-at 1667147769556}
+ {:block/name "java record patterns",
+  :block/created-at 1667148009040,
+  :block/updated-at 1667148009040}
  {:block/name "java_fx_and_libs",
   :block/created-at 1667059301899,
   :block/updated-at 1667059301899}
@@ -159,7 +168,7 @@
   :block/updated-at 1667068951885}
  {:block/name "oct 30th, 2022",
   :block/created-at 1667066400867,
-  :block/updated-at 1667069599113}
+  :block/updated-at 1667147934740}
  {:block/name "oop",
   :block/created-at 1667065952440,
   :block/updated-at 1667065952440}
@@ -190,12 +199,15 @@
  {:block/name "swift",
   :block/created-at 1667059301710,
   :block/updated-at 1667059301710}
+ {:block/name "swift @escaping",
+  :block/created-at 1667071400454,
+  :block/updated-at 1667071400454}
  {:block/name "swift closure syntax",
   :block/created-at 1667070650343,
   :block/updated-at 1667070650343}
  {:block/name "swift language",
   :block/created-at 1667069579407,
-  :block/updated-at 1667071330336}
+  :block/updated-at 1667071400454}
  {:block/name "todo",
   :block/created-at 1667059882140,
   :block/updated-at 1667059882140}
