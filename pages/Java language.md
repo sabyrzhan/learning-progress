@@ -35,6 +35,7 @@
 		  }
 		  ```
 	- ### Record Patterns Preview #[[java record patterns]]
+	  collapsed:: true
 		- Possible to match records with parameters
 		  ```
 		  var point = createRecord();
@@ -68,3 +69,16 @@
 		    default -> System.out.println("Unknown point");
 		  }
 		  ```
+	- ### Virtual Threads Preview #[[java virtual threads]]
+		- VTs are themselves instances of `java.lang.Thread` class
+		- Previously it was called `Fiber`
+		- Thread on which VTs are running is called carrier thread
+		- Platform threads rely to OS scheduler for scheduling, whereas VTs rely on `ForkJoinPool`
+		- If VT is processing blocking operation, then carrier thread unmounts it to process other VT, which scales concurrency very well
+		- However in 2 cases the VT cannot be unmounted: when `synchronized` and JNI codes are processed. So, if you want high scalability with VT, better to avoid using `synchronized` and JNI blocks
+		- To create new VT you can use following APIs: #[[java virtual thread api]]
+			- `Thread.Builder` - as its name says.  To create new VT you can you following factory method. For example, `Thread.ofVirtual().name("name").unstarted(runnable)`
+			- `Thread.startVirtualThread(Runnable)` - created and immediately runs VT
+			- `Thread.isVirtual()` - checks whether thread is virtual
+			- `Executors.newVirtualThreadPerTaskExecutor()` - create new executor service that creates VT per new task.
+		- JVM TI and Java Flight Recorder can be used to debug VTs in applications #[[java virtual threads debug]]
