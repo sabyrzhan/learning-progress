@@ -112,9 +112,12 @@
  {:block/name "java 19",
   :block/created-at 1667147236953,
   :block/updated-at 1667147236953}
+ {:block/name "java gc",
+  :block/created-at 1667306134098,
+  :block/updated-at 1667306134098}
  {:block/name "java language",
   :block/created-at 1667147158592,
-  :block/updated-at 1667305604104}
+  :block/updated-at 1667306418919}
  {:block/name "java libraries and frameworks",
   :block/created-at 1667059301695,
   :block/updated-at 1667059301695}
@@ -229,6 +232,12 @@
  {:block/name "todo",
   :block/created-at 1667059882140,
   :block/updated-at 1667059882140}
+ {:block/name "virtual thread executor",
+  :block/created-at 1667305801149,
+  :block/updated-at 1667305801149}
+ {:block/name "virtual thread memory",
+  :block/created-at 1667305862782,
+  :block/updated-at 1667305862782}
  {:block/name "wait",
   :block/created-at 1667059882140,
   :block/updated-at 1667059882140}
