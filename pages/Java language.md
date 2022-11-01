@@ -82,3 +82,7 @@
 			- `Thread.isVirtual()` - checks whether thread is virtual
 			- `Executors.newVirtualThreadPerTaskExecutor()` - create new executor service that creates VT per new task.
 		- JVM TI and Java Flight Recorder can be used to debug VTs in applications #[[java virtual threads debug]]
+		- You must keep in mind that virtual threads are IO-bound rather than CPU-bound. It scales very well when working with blocking tasks such disk, network requests.
+		- Usage of executors or schedulers for threads is antipattern when creating virtual threads. Sure, anyway we have to use factory executor like `Executors.newVirtualThreadPerTaskExecutor`, but using cached or 1-thread per task pools will be overkill. #[[virtual thread executor]]
+		- Virtual threads are very lightweight and memory footprint for starts out at only a few hundred bytes, and is expanded and shrunk automatically as the call stack expands and shrinks.
+		- Virtual threads are an alternative implementation of  `java.lang.Thread` which store their stack frames in Javas garbage-collected heap rather than in monolithic blocks of memory allocated by the operating system. #[[virtual thread memory]]
