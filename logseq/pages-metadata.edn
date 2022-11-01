@@ -13,6 +13,9 @@
  {:block/name "b",
   :block/created-at 1667059882140,
   :block/updated-at 1667059882140}
+ {:block/name "brian goetz",
+  :block/created-at 1667304482328,
+  :block/updated-at 1667304482328}
  {:block/name "c",
   :block/created-at 1667059882140,
   :block/updated-at 1667059882140}
@@ -111,7 +114,7 @@
   :block/updated-at 1667147236953}
  {:block/name "java language",
   :block/created-at 1667147158592,
-  :block/updated-at 1667197844498}
+  :block/updated-at 1667305604104}
  {:block/name "java libraries and frameworks",
   :block/created-at 1667059301695,
   :block/updated-at 1667059301695}
@@ -121,9 +124,15 @@
  {:block/name "java record patterns",
   :block/created-at 1667148009040,
   :block/updated-at 1667148009040}
+ {:block/name "java virtual thread api",
+  :block/created-at 1667201921155,
+  :block/updated-at 1667201921155}
  {:block/name "java virtual threads",
   :block/created-at 1667196611146,
   :block/updated-at 1667196611146}
+ {:block/name "java virtual threads debug",
+  :block/created-at 1667201898092,
+  :block/updated-at 1667201898092}
  {:block/name "java_fx_and_libs",
   :block/created-at 1667059301899,
   :block/updated-at 1667059301899}
@@ -163,6 +172,9 @@
  {:block/name "nested and inner classes",
   :block/created-at 1667065990595,
   :block/updated-at 1667065990595}
+ {:block/name "nov 1st, 2022",
+  :block/created-at 1667304416298,
+  :block/updated-at 1667304522970}
  {:block/name "now",
   :block/created-at 1667059882140,
   :block/updated-at 1667059882140}
@@ -174,7 +186,7 @@
   :block/updated-at 1667149614099}
  {:block/name "oct 31st, 2022",
   :block/created-at 1667161494980,
-  :block/updated-at 1667196669223}
+  :block/updated-at 1667202051800}
  {:block/name "oop",
   :block/created-at 1667065952440,
   :block/updated-at 1667065952440}
