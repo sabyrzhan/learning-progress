@@ -1,4 +1,7 @@
-[{:block/name "a",
+[{:block/name "[java",
+  :block/created-at 1668541220476,
+  :block/updated-at 1668541220476}
+ {:block/name "a",
   :block/created-at 1667059882140,
   :block/updated-at 1667059882140}
  {:block/name "access modifiers",
@@ -121,6 +124,9 @@
  {:block/name "java libraries and frameworks",
   :block/created-at 1667059301695,
   :block/updated-at 1667059301695}
+ {:block/name "java networking",
+  :block/created-at 1668540909716,
+  :block/updated-at 1668540909716}
  {:block/name "java pattern matching",
   :block/created-at 1667147769556,
   :block/updated-at 1667147769556}
@@ -175,6 +181,24 @@
  {:block/name "nested and inner classes",
   :block/created-at 1667065990595,
   :block/updated-at 1667065990595}
+ {:block/name "nov 10th, 2022",
+  :block/created-at 1668059848817,
+  :block/updated-at 1668060410319}
+ {:block/name "nov 11th, 2022",
+  :block/created-at 1668117621396,
+  :block/updated-at 1668117621396}
+ {:block/name "nov 12th, 2022",
+  :block/created-at 1668207301077,
+  :block/updated-at 1668207301077}
+ {:block/name "nov 13th, 2022",
+  :block/created-at 1668290422896,
+  :block/updated-at 1668290422896}
+ {:block/name "nov 14th, 2022",
+  :block/created-at 1668380202910,
+  :block/updated-at 1668380202910}
+ {:block/name "nov 15th, 2022",
+  :block/created-at 1668463768825,
+  :block/updated-at 1668541579800}
  {:block/name "nov 1st, 2022",
   :block/created-at 1667304416298,
   :block/updated-at 1667304522970}
