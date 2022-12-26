@@ -194,3 +194,36 @@ set(value) {
 // Example. Data classes must have at least 1 parameter in a constructor
 data class User(id: Int, name: String)
 ```
+
+## Generics
+### `out` keyword
+`out` keyword is the analogue of `extends` in Java. For example, let's say we have following classes:
+```
+class Car {}
+class Audi: Car {}
+class Mercedes: Car {}
+class CarMechanic<T:Car> {
+ fun repair() {}
+}
+class Workshop {
+ fun addMechanic(mechanic: CarMechanic<Car>) {}
+}
+```
+If we try to instantiate `Workshop` and add for example `Audi` mechanic:
+```
+val mechanic = CarMechanic<Audi>()
+val workshop = Workshop()
+workshop.addMechanic(mechanic) // <-- ERROR
+```
+we get error because `workshop.addMechanic` expects specific type of `Car` only. In order to let it accept subclasses of `Car` class we need to add `out` keyword in front of `T` which we are declaring in `CarMechanic` like this:
+```
+class CarMechanic<out T:Car> {
+ fun repair() {}
+}
+```
+This is the same as if we define generics in Java:
+```
+class CarMechanic<T extends Car> {
+ void repair() {}
+}
+```
