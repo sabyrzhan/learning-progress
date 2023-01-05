@@ -1,11 +1,12 @@
 # 👨‍💻 📝 📊 Progress of everything I am learning
+- Here I am logging everything I am learning. Use LogSeq to open and read the files.
+-
 - [Github learnings](github.md)
 - Finance
-  - [General finance](finance/general_finance.md)
-  - [Crypto](finance/crypto.md)
-  - [Genearal loan](finance/loan.md)
-  - [Excel](finance/excel.md)
-- [K8s](k8s.md)
+	- [General finance](finance/general_finance.md)
+	- [Crypto](finance/crypto.md)
+	- [Genearal loan](finance/loan.md)
+	- [Excel](finance/excel.md)
 - [Math](math.md)
 - [Linux](linux.md)
 - [SRE](sre.md)
@@ -17,12 +18,12 @@
 - [Desing Patterns](design_patterns.md)
 - [SQL](sql.md)
 - [Spring](spring.md)
-- [AWS Services](aws_services.md) 
+- [AWS Services](aws_services.md)
 - [Java libraries and frameworks](java_fx_and_libs.md)
 - [Python](python.md)
 - [GIT](git.md)
 - Apple
-  - [XCode](apple/xcode.md)
-  - [Swift](apple/swift.md)
+	- [XCode](apple/xcode.md)
+	- [Swift](apple/swift.md)
 - Monitoring
-  - [Grafana](monitoring/grafana.md)
+	- [Grafana](monitoring/grafana.md)
