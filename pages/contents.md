@@ -3,3 +3,6 @@
 - Programming Languages
 	- [[Java language]]
 	- [[Kotlin language]]
+- Linux
+	- [[Ubuntu]]
+-
