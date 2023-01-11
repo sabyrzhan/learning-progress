@@ -5,4 +5,8 @@
 	- [[Kotlin language]]
 - Linux
 	- [[Ubuntu]]
+- Java Frameworks
+	- [[Spring]]
+- Databases
+	- [[PostgreSQL]]
 -
