@@ -3,10 +3,11 @@
 - Programming Languages
 	- [[Java language]]
 	- [[Kotlin language]]
-- Linux
-	- [[Ubuntu]]
 - Java Frameworks
 	- [[Spring]]
 - Databases
 	- [[PostgreSQL]]
--
+- Operating Systems
+	- [[macOS]]
+	- Linux
+		- [[Ubuntu]]
