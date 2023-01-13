@@ -9,5 +9,9 @@
 	- [[PostgreSQL]]
 - Operating Systems
 	- [[macOS]]
-	- Linux
+	- [[Linux]]
 		- [[Ubuntu]]
+- Book and Tutorial notes
+	- Book: [[Деньги под контролем]]
+	- Tutorial: [[Understanding the Java Virtual Machine Memory Management]]
+	- Tutorial: [[Understanding the Java Virtual Machine - Class Loading and Reflection]]

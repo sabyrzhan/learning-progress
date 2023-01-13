@@ -1,0 +1,37 @@
+- Author: Pluralsight
+- Memory divided into:
+	- Young generation and old generation
+	- Most initial ones are located in Eden Space
+	- Young generation has two survivor spaces:
+		- Objects that survive GC — move to survivor space
+		- When GC runs on objects in Eden they are copied to newer survivor space
+	- In old generation reside — objects that live long — that survive GCs over time
+	- In young generation most objects live for short period of time
+	- GC runs more often on young generation than on old generation
+	- Major GC is performed on old gen
+	- Full GC is performed on young and old gen
+- Collectors:
+	- Serial, Parallel, ParallelOld
+		- serial - recommended on client side
+		- parallel/parallelOld - on server side (parallelOld is recommended)
+	- Concurrent mark and sweap - collects garbage only on old generation collections
+- References:
+	- String → Soft → Weak → Phantom
+	- Strong refs are not GCd
+	- Soft refs GCs when memory pressure
+	- Weak refs GCd immediately after GC run
+	- Phantom refs GC differently
+	- WeakReference — can be used as meta data of another type. E.g., WeakHashMap
+	- SoftReference — cab be acted as caching
+		- But you don’t have control, rather GC has
+		- So it is unpredictable
+		- When strong ref is cleared by GC — strong still remains until memory pressure occurs
+	- PhantomReference — lets to interact with GC. But it is least used.
+		- Can be used instead of finalizers
+	- WeakHashMap:
+		- Key is a weak reference
+		- Value is the any object.
+		- When object is GCd:
+			- Key is removed since it is a weak reference to an object
+			- At the same time — value is also removed since it was connected with the key
+	- ReferenceQueue — to make callbacks when object GCd and objects cleaned.
