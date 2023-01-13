@@ -1,0 +1,14 @@
+- Author: PluralSight
+- ClassLoaders
+	- Learned how class loaders work. Even though the tutorial can be applied to only <= Java 8 versions - I learned there are 3 types of class loaders:
+		- **AppClassLoader or SystemClassLoader** - class loader that loads classes from application class path.
+		- **ExtClassLoader** - loads classes from ext folder of Java environment
+		- **BootstrapClassLoader** - loads from rt.jar runtime and is visible to all other classes from app and ext class loader
+	- Classes can be loaded in two ways:
+		- -cp or —classpath parameter — this way we can show path to classes. Ex., -cp classes:lib/myjar.jar
+		- CLASSPATH — via setting envrionment variable. Ex., set CLASSPATH=classes:lib/myjar.jar
+	- Using class loader it is possible to use various classes at runtime by instantiating class loader.
+	- Hot reload — let’s to achieve to inject and use the classes while the system is running.
+- Reflection
+	- Pretty straightforward. Shows how to create instances of classes and invoke the methods using reflections
+	- IoC — demonstrates how it is possible to create IoC using reflections
