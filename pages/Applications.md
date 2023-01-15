@@ -1,0 +1,14 @@
+- ## Top apps
+	- ### macOS
+		- **Alfred** - quick find and access tool
+		- **Bartender** - system tray items management tool
+		- **Jiggler** - prevents from sleeping ([GitHub](https://github.com/bhaller/Jiggler))
+		- **Karabiner-Elements** - very useful keyboard keys mapper
+		- **Loopback** - lets to create audio channel possible to route other sounds to
+		- **Rectangle** - window manager ([GitHub](https://github.com/rxhanson/Rectangle))
+		- **Magnet** - another window manager but proprietary
+		- **Icons8** - free and paid icons
+	- ### Android/iOS
+		- **MuslimPro** - pray time reminder (Android)
+		- **FilmicPro** - professional video filming app
+		- **iStatMenus**  - paid system monitoring app
