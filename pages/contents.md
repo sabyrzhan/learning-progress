@@ -1,4 +1,5 @@
 - [[Applications]]
+- [[AWS]]
 - [[Kubernetes]]
 - [[Nginx]]
 - Programming Languages
@@ -6,13 +7,18 @@
 	- [[Kotlin language]]
 - Java Frameworks
 	- [[Spring]]
+- [[Design Patterns]]
 - Databases
 	- [[PostgreSQL]]
 - Operating Systems
+  collapsed:: true
+	- General
+		- [[Concurrency]]
 	- [[macOS]]
 	- [[Linux]]
 		- [[Ubuntu]]
 - Book and Tutorial notes
+  collapsed:: true
 	- Book: [[Деньги под контролем]]
 	- Tutorial: [[Understanding the Java Virtual Machine Memory Management]]
 	- Tutorial: [[Understanding the Java Virtual Machine - Class Loading and Reflection]]
