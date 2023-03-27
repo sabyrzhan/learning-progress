@@ -16,6 +16,10 @@ Install Miniconda from [here](https://docs.conda.io/en/latest/miniconda.html)
 ### Python2 installation
 Miniconda repository currently contains only Python3 binaries. To install Python2 add [conda-forge](https://conda-forge.org/) to channels.
 ```
+# Add channel
+conda config --add channels conda-forge
+conda config --set channel_priority strict 
+
 # install python2
-conda install python=2.7.15
+conda install python=2.7
 ```
