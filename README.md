@@ -20,7 +20,7 @@
 - [Spring](spring.md)
 - [AWS Services](aws_services.md)
 - [Java libraries and frameworks](java_fx_and_libs.md)
-- [Python](python.md)
+- [Python](Python.md)
 - [GIT](git.md)
 - Apple
 	- [XCode](apple/xcode.md)
