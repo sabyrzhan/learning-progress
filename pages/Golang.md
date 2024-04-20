@@ -1,4 +1,30 @@
-## [[Install app or package globally]]
+## [[Time format in golang]]
+	- Docs:
+		- SO: https://stackoverflow.com/questions/42217308/go-time-format-how-to-understand-meaning-of-2006-01-02-layout
+		- Godoc: https://pkg.go.dev/time#example-Time.Format
+	- ```
+	  # Parse format
+	  Jan 2 15:04:05 2006 MST
+	  1   2  3  4  5    6  -7
+	  
+	  # Example
+	  t, err := time.Parse(time.UnixDate, "Wed Feb 25 11:06:39 PST 2015")
+	  
+	  // The time zone attached to the time value affects its output.
+	  fmt.Println("Same, in UTC:", t.UTC().Format(time.UnixDate))
+	  fmt.Println("in Shanghai with seconds:", 
+	  					t.In(tz).Format("2006-01-02T15:04:05 -070000"))
+	  fmt.Println("in Shanghai with colon seconds:", 
+	  					t.In(tz).Format("2006-01-02T15:04:05 -07:00:00"))
+	                      
+	  // time.Time's Stringer method is useful without any format.
+	  fmt.Println("default format:", t)
+	  
+	  // Predefined constants in the package implement common layouts.
+	  fmt.Println("Unix format:", t.Format(time.UnixDate))
+	  
+	  ```
+- ## [[Install app or package globally]]
 	- Source: https://stackoverflow.com/questions/36650052/golang-equivalent-of-npm-install-g/68559728#68559728
 		- Starting with Go >= **1.16** the recommended way to install an executable is to use
 		  ```
