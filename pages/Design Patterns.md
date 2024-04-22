@@ -1,4 +1,4 @@
-## GoF Patterns
+## [[GoF Patterns]]
 	- ### Strategy pattern
 		- Used to define multiple algorithms that differ only in behavior and use them interchangeably at run-time. It is similar to Dependency Injection but the difference is - DI is used for code coupling but not for interchanging implementations at run-time.
 	- ### Observer pattern
@@ -7,5 +7,7 @@
 			- Observer - notification receiver who actually has method - **notify**.
 	- ### Factory Method Pattern
 		- Used to create objects inheriting the same object. The pattern more about inheritence compared to abstract factory pattern.
+		- Let class or interface subcalsses decide which concrete object to create
 	- ### Abstract Factory Pattern
 		- Also known as - **factory of factories** pattern. Used to create objects from the same family. The pattern uses composition to built final objects.
+		- The factory class creates other factory classes which themselves create and return abstract objects.
