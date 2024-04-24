@@ -11,3 +11,5 @@
 	- ### Abstract Factory Pattern
 		- Also known as - **factory of factories** pattern. Used to create objects from the same family. The pattern uses composition to built final objects.
 		- The factory class creates other factory classes which themselves create and return abstract objects.
+	- ### Prototype Pattern
+		- Create new object by cloning existing object. Thus eliminating overhead of creating new  object and setting each field manually.
