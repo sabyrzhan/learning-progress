@@ -1,4 +1,9 @@
-## [[REST API in using plain Golang 1.22 http.ServeMux]]
+## [[Useful linter tools]]
+	- `gosec` - https://github.com/securego/gosec
+	- `staticcheck` - https://staticcheck.io/docs/getting-started/
+- ## [[Recursively scan all subdirectories]]
+	- `./...` syntax can be used by most of the Golang tools (`go build ./...`, `go test ./...`, `staticcheck ./...`, `gosec ./...` etc) to tell to scan all subpackages recursively starting from the current directory
+- ## [[REST API in using plain Golang 1.22 http.ServeMux]]
 	- Building REST APIs With Go 1.22 http.ServeMux
 		- https://shijuvar.medium.com/building-rest-apis-with-go-1-22-http-servemux-2115f242f02b
 	- Reddit: **Let’s say you want to build a Go REST API. Should you use the standard library, a router, or a full-blown framework?**
