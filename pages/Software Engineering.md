@@ -1,8 +1,26 @@
-## Architecture vs Design
-* Architecture - highest level of abstraction that shows from which components/modules the system consists and desribe their interaction.
-* Design - is applied to component/module and describes its functionality (functions, relations, dependencies etc)
-
-From this definition I can say that architecture itself consists from designs of each component. In reality, when new component's design is complete it is merged into system architecture, thus the original design spec becomes obsolete.
+## [[Polimorphism vs Duck typing]]
+	- Polymorphism is one of the OOP principles which means "multi forms". This lets to interface with object by the same common interface. Child class is also ploymorphic the same way as class implementing interface.
+	- Duck typing is a method of identifying does the object provide specific or set of methods regardless what type it is. (If it quacks and walks like a Duck, then it is a Duck)
+	- For example:
+		- ```
+		  class Animal:
+		      def speak(self):
+		          print("Can bark")
+		  
+		  class Human:
+		      def speak(self):
+		          print("Can speak")
+		  
+		  def callIt(obj):
+		      obj.speak()
+		  
+		  if __name__ == "__main__":
+		      callIt(Animal())
+		  ```
+- ## [[ Architecture vs Design]]
+	- Architecture - highest level of abstraction that shows from which components/modules the system consists and desribe their interaction.
+	- Design - is applied to component/module and describes its functionality (functions, relations, dependencies etc)
+	- From this definition I can say that architecture itself consists from designs of each component. In reality, when new component's design is complete it is merged into system architecture, thus the original design spec becomes obsolete.
 - ## SOLID principle
   1. S - Single-Responsibility Principle
     1. Each class/function should have single respinsibility or reason to change

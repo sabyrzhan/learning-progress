@@ -1,4 +1,17 @@
-## [[Useful linter tools]]
+## [[new(struct) vs &struct{}]]
+	- There are no differences between them. With `new()` function it initializes with 0 values and returns pointer.
+	- Whereas with `&struct{}` you can set initial values inside curly braces
+- ## [[new() vs make() function]]
+	- `new()` - creates value and returns pointer to it. Accepts only basic data types like struct, int etc
+	- `make()` - accepts only slice, map and channel types and returns created value of it but not pointer
+- ## [[pass-by-reference types]]
+	- in Go **slices, maps, and channel** are always passed-by-reference not by-value
+- ## [[Golang interfaces]]
+	- Go interface internals by golang creator - https://www.airs.com/blog/archives/277
+	- Go interfaces & pointers - https://web.archive.org/web/20170120032933/https://medium.com/@agileseeker/go-interfaces-pointers-4d1d98d5c9c6
+	- How to user interfaces in Go - https://jordanorelli.com/post/32665860244/how-to-use-interfaces-in-go
+	- Meaning of interface - https://stackoverflow.com/questions/23148812/whats-the-meaning-of-interface
+- ## [[Useful linter tools]]
 	- `gosec` - https://github.com/securego/gosec
 	- `staticcheck` - https://staticcheck.io/docs/getting-started/
 - ## [[Recursively scan all subdirectories]]
