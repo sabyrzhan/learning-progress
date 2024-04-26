@@ -1,6 +1,8 @@
 # 👨‍💻 📝 📊 Progress of everything I am learning
 - Here I am logging everything I am learning. Use LogSeq to open and read the files.
 -
+- [[Java language]]
+- [[Golang]]
 - [Github learnings](github.md)
 - Finance
 	- [General finance](finance/general_finance.md)
@@ -13,7 +15,6 @@
 - [Software engineering](software_engineering.md)
 - [Distributed systems](distributed_systems.md)
 - [Concurrency](concurrency.md)
-- [JVM](jvm.md)
 - [Kotlin](kotlin.md)
 - [Desing Patterns](design_patterns.md)
 - [SQL](sql.md)
