@@ -1,3 +1,16 @@
+## [[Ducktyping]]
+	- You can ducktype functions or methods using `interface{}`. You can restrict your parameters to structs as well as to interfaces, though you cannot conbine them:
+	  ```
+	  func DuckType1(data interface{  Function1() string; Function2() int }) {
+	    fmt.Println(data.Function1())
+	    fmt.Println(data.Function2())
+	  }
+	  
+	  func DuckType2(data struct { Data1 string; Data2 int }) {
+	    fmt.Println(data.Data1)
+	    fmt.Println(data.Data2)
+	  }
+	  ```
 ## [[new(struct) vs &struct{}]]
 
 	- There are no differences between them. With `new()` function it initializes with 0 values and returns pointer.
