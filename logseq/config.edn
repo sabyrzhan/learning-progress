@@ -296,8 +296,8 @@
  ;;     ;use Percent-encoding for slash and other invalid characters
  ;;     ;parse `.` in file name as slash `/` in page title
  :file/name-format :triple-lowbar
- :graph/forcesettings {:link-dist 110
- :charge-strength -500
+ :graph/forcesettings {:link-dist 60
+ :charge-strength -600
  :charge-range 800}
  :graph/settings {:builtin-pages? false
  :journal? false
