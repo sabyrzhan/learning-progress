@@ -1,3 +1,9 @@
+## [[Replace dependency version]]
+	- ```
+	  # Here I am changing github.com/hashicorp/go-getter dependency version to v1.7.4
+	  go mod edit -replace \
+	  	github.com/hashicorp/go-getter=github.com/hashicorp/go-getter@v1.7.4
+	  ```
 ## [[Recursively scan all subdirectories]]
 
 	- `./...` syntax can be used by most of the Golang tools (`go build ./...`, `go test ./...`, `staticcheck ./...`, `gosec ./...` etc) to tell to scan all subpackages recursively starting from the current directory
