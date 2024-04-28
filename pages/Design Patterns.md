@@ -26,3 +26,7 @@
 			  This is the main contract or interface that is exported to **Abstraction** layer and single point of interaction with this component or hierarchy.
 			- **ConcreteImplementor**:
 			  Concrete implementation of the interface. Strictly follows the contract when implemented and is prohibited to be used directly by the abstraction. When the **Implementor** functionality is extended, the concrete implementor is forced to implement the functionality accordingly.
+		- **Key points**:
+		  *Decouple abstraction from implementation*, *strong encapsulation*, *separate hierarchy*
+		- **Resources**:
+			- https://www.pentalog.com/blog/design-patterns/bridge-design-patterns/
