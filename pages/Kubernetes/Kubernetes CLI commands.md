@@ -1,4 +1,21 @@
-## [[Create namespace]]
+## [[Kube API proxy]]
+	- To access and make request to Kubernetes API, we can use proxy:
+		- ```
+		  kubectl proxy
+		  ```
+		- By default it listens on `127.0.0.1` network interface. By passing `--address 0.0.0.0` you can make it public
+		- Without kube proxy, the API host requires CA cert verification and token manually.
+		- You can also run it inside a container as service and make requests to pod directly. For example here is the sample Dockerfile:
+			- ```
+			  FROM alpine:3
+			  RUN apk add --no-cache curl && \
+			      curl -L -s https://dl.k8s.io/v1.30.0/bin/linux/amd64/kubectl \
+			      	-o /usr/local/bin/kubectl && \
+			      chmod +x /usr/local/bin/kubectl
+			  EXPOSE 8081
+			  ENTRYPOINT ["kubectl", "proxy", "--address", "0.0.0.0"]
+			  ```
+- ## [[Create namespace]]
 	- `kubectl create namespace development`
 	- Create using YAML:
 		- ```

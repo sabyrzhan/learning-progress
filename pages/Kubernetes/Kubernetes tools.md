@@ -1,0 +1,12 @@
+- Must have CLI tools to install:
+	- `k9s` - Kubernetes cluster management CLI tool
+	- `fubectl` - k alias for kubectl
+		- https://github.com/kubermatic/fubectl?tab=readme-ov-file
+	- `krew` - plugin manager
+	- `kubectl tree` and `kubectl lineage` - k8s plugins to display object relashionships
+		- https://github.com/ahmetb/kubectl-tree
+		- https://github.com/tohjustin/kube-lineage
+	- `kubectl neat` - k8s plugin that removes cluttered fields from manifest
+		- https://github.com/itaysk/kubectl-neat
+- Curated list of tools:
+	- https://collabnix.github.io/kubetools/
