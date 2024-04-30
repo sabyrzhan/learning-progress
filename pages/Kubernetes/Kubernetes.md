@@ -1,4 +1,6 @@
-## [[Kubernetes CLI commands]]
+## [[Kubernetes core]]
+- ## [[Kubernetes tools]]
+- ## [[Kubernetes CLI commands]]
 - ##  [[Kubernetes Architecture]]
 	- **Type:** Master/Node
 	- **Master:** aka ControlPlane
