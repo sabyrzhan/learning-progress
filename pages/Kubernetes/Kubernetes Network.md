@@ -1,0 +1,5 @@
+- Kubernetes operates on top of abstracted network interface that is managed using policies rather than physical topology. Instead it uses so called "flat network" topology that is based on CNI (Container Network Interface). In traditional network if you want control and secure it, you would use correct physical topology and adopt firewalls. But in CNI you can control the traffic using NetworkPolicy.
+- Kubernetes uses basic network implementation called `kubenet`. However, there are many other popular CNI implementations, one of them is Calico.
+  id:: 6633be4b-7361-4d83-8236-9208180bd094
+- By default all the traffic between the pods are allowed unless NetworkPolicy specified. If you define at least one NetworkPolicy, then all the traffic is "DENIED" except the rules you specify in the policy.
+-

@@ -296,10 +296,11 @@
  ;;     ;use Percent-encoding for slash and other invalid characters
  ;;     ;parse `.` in file name as slash `/` in page title
  :file/name-format :triple-lowbar
- :graph/forcesettings {:link-dist 90
+ :graph/forcesettings {:link-dist 60
  :charge-strength -400
- :charge-range 1100}
+ :charge-range 1200}
  :graph/settings {:builtin-pages? false
  :journal? false
- :excluded-pages? true}
+ :excluded-pages? false
+ :orphan-pages? false}
  }
