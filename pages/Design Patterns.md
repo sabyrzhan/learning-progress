@@ -14,13 +14,11 @@
 	- ### Prototype Pattern
 		- Create new object by cloning existing object. Thus eliminating overhead of creating new  object and setting each field manually.
 	- ### Bridge Pattern
-	  collapsed:: true
 		- **Problem**:
 		  Adding a new functionality to system produces a cross product of components and functionalities. This type of problem occurs in a system with OOP design and adding new functionalities using inheritance. In the end system becomes a single hierarchy flat tree system with tightly coupled classes.
 		- **Solution**:
 		  Use composition instead of inheritance by dividing the single hierarchy into multiple hierarchies which can independently be developed. Interaction with other hierarchy can be done over provided interfaces. This eliminates tight coupling to specific implementation.
-		- **Pattern**:
-		  Bridge pattern produces following components after your refactor using this pattern:
+		- **Pattern components**:
 			- **Abstraction***:
 			  The top layer or component that client uses to interact with your system. The layer does not know anything about implementation and interacts with other hierarchy or component strictly over interface provided by it. This layer can be extended using so called **Refined Abstraction**, but still keep using interfaces as a bridge to interact with other component.
 			- **Implementor**:
@@ -38,8 +36,7 @@
 			- **Batch operation**: You have cron jobs in Kubernetes that perform various tasks. Each task take different time to perform. You want to get not only single task average time, but also all tasks average time.
 		- **Solution**:
 		  We can use Composite pattern for that. It contains collection of objects as tree structure that all comply to the same contract. We can add or remove objects using Composite and in the end by using the same contract perform the same operation on all of them as if on single one.
-		- **Pattern**:
-		  It consists from following components:
+		- **Pattern components**:
 			- **Component**
 			  The main interface that all the objects must comply to including Composite intself
 			- **Leaf**
@@ -54,6 +51,12 @@
 			- **HTTP client**: to add functionalities like request metrics, logging, data encryption, retry you must make a lot of subclasses. If there has to be combinations then the size becomes even more.
 			- **File Reader and Writer**: we can have handler of various file types. And if initially the class contains basic functionality, then to extend it with other features like encryption, faster storage type support, large file support etc, here also have to make combinations with just inheritance
 		- **Solution**:
-		  Decorator pattern is to the rescue. It wraps the target class complying to the same interface as the target one and provide additional features. Besides that you can use multiple stacks of decorators, by passing as the argument. Since all of them will implement the same contract. This looks similar to Composite, but the difference is instead of tree of objects it only uses single wrapped target object.
-		- **Pattern**
-		  Even though we could implement this using inheritance that is not the only or main way. When the quantity of functionalities become large, managing subclasses produce "explosion of class hierarchy". Since you have to deal with combinations of the features, the number becomes even more. Because of that using composition is the primary way, since it lets to comply to OCP and SRP principles. Also makes it easy to test by injecting fake or  stubs.
+		  Decorator pattern is to the rescue. It wraps the target class also being complied to the same interface as the target one and provide additional features. Besides that you can use multiple stacks of decorators, by passing as the argument, since all of them implement the same contract. This looks similar to Composite, but the difference is instead of tree of objects it only uses single wrapped target object. Even though we could implement this using inheritance that is not the only or main way. When the quantity of functionalities become large, managing subclasses produce "explosion of class hierarchy". Since you have to deal with combinations of the features, the number becomes even more. Because of that using composition is the primary way, since it lets to comply to OCP and SRP principles. Also makes it easy to test by injecting fake or  stubs.
+	- ### Facade Pattern
+		- **Problem**:
+		  You have a system that is very complicated to use for regular user due to involvement of many dependent services. Or a framework that consists from many libraries, in which in order to create just a simple REST endpoint, developer has to first instantiate and register bunch objects from various libraries. For example:
+			- **P2P payment API**: in order to make simple p2p payment from one account to another account using phone number, you have to instantiate subsystems like AccountService, CurrencyService, User3DSecureService, DatabaseService etc, also in right order just to perform SendMoney in the end.
+			- **Spring Framework**: Spring Framework itself consists from many core libraries like spring-web, spring-mvc, spring-jdbc, spring-data, spring-security etc. To just create REST API and start the service, the developer must know which beans to instantiate first and start the server. Thankfully Spring Boot simplifies all these process using dependency autodiscovery and autoconfiguration.
+		- **Solution**:
+		  Using Facade pattern you can aggregate all the dependent service into single API and provide simple or fluent API to the user. All the heavy and complicated jobs, communications between the components are performed inside the Facade class and is hidden from the user.
+-
