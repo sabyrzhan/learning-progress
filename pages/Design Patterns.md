@@ -82,3 +82,9 @@
 				- ***Extrinsic***: the one that is changed and dependent to external context. It need to be passed to the object in order to perform operation.
 			- **Factory**: the one that picks the object by some part of the intrinsic state and creates new object if does not exist.
 			- **Client or Context**: the owner of the contextual data. The client passes the contextual data to flyweight object to perform operation. Client sees the object as a template and uses Factory to get the it instead of creating it directly.
+	- ### Proxy Pattern
+	  collapsed:: true
+		- **Problem**
+		  Let's say we have an HTTP client to remote REST service. It is a really basic client that does not have much functionality related to distributed environment: like better logging, retrier, pooling, caching etc. How can we add such functionality to each method without breaking SRP and OCP? Also keeping the same interface and make it swappable in our system?
+		- **Solution**
+		  We can use Proxy pattern for that. By aggregating the target client and implementing the common interface we can add our function before and after calling the target method. The purpose of the pattern is not to change the behavior but extend the existing methods with supporting functionality and forward the request to target method.
