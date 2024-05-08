@@ -83,8 +83,12 @@
 			- **Factory**: the one that picks the object by some part of the intrinsic state and creates new object if does not exist.
 			- **Client or Context**: the owner of the contextual data. The client passes the contextual data to flyweight object to perform operation. Client sees the object as a template and uses Factory to get the it instead of creating it directly.
 	- ### Proxy Pattern
-	  collapsed:: true
 		- **Problem**
 		  Let's say we have an HTTP client to remote REST service. It is a really basic client that does not have much functionality related to distributed environment: like better logging, retrier, pooling, caching etc. How can we add such functionality to each method without breaking SRP and OCP? Also keeping the same interface and make it swappable in our system?
 		- **Solution**
 		  We can use Proxy pattern for that. By aggregating the target client and implementing the common interface we can add our function before and after calling the target method. The purpose of the pattern is not to change the behavior but extend the existing methods with supporting functionality and forward the request to target method.
+	- ### Chain of Responsibility Pattern
+		- **Problem**
+		  There can be a requirement to make multiple steps of validations or even trace the full lifecycle of the request. It is possible to make all these validations within one function or class. But if it happens within a framework or a system where the steps are evolved and they are added over time, it will be hard to maintain it. If you want to remove or reorder the steps the maintenance becomes a nightmare. In the end the class will violate OCP and SRP principles and will require testing on every change since it can bring new bugs.
+		- **Solution**
+		  With Chain of Responsibility (CoR) pattern you can divide the steps into multiple separate classes or methods. Each class will perform its own responsibility and pass the outcome or data to next class in the chain. Each can be reordered and maintained separately. The implementation is also very simple, which can be achieved using single-linked list. Each next step will have a pointer to its next step and so forth. For any step there is no requirement to have the reference to the next step. It can either handle it or break the chain which will finish the processing.
