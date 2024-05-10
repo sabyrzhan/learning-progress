@@ -83,12 +83,25 @@
 			- **Factory**: the one that picks the object by some part of the intrinsic state and creates new object if does not exist.
 			- **Client or Context**: the owner of the contextual data. The client passes the contextual data to flyweight object to perform operation. Client sees the object as a template and uses Factory to get the it instead of creating it directly.
 	- ### Proxy Pattern
+	  collapsed:: true
 		- **Problem**
 		  Let's say we have an HTTP client to remote REST service. It is a really basic client that does not have much functionality related to distributed environment: like better logging, retrier, pooling, caching etc. How can we add such functionality to each method without breaking SRP and OCP? Also keeping the same interface and make it swappable in our system?
 		- **Solution**
 		  We can use Proxy pattern for that. By aggregating the target client and implementing the common interface we can add our function before and after calling the target method. The purpose of the pattern is not to change the behavior but extend the existing methods with supporting functionality and forward the request to target method.
 	- ### Chain of Responsibility Pattern
+	  collapsed:: true
 		- **Problem**
 		  There can be a requirement to make multiple steps of validations or even trace the full lifecycle of the request. It is possible to make all these validations within one function or class. But if it happens within a framework or a system where the steps are evolved and they are added over time, it will be hard to maintain it. If you want to remove or reorder the steps the maintenance becomes a nightmare. In the end the class will violate OCP and SRP principles and will require testing on every change since it can bring new bugs.
 		- **Solution**
 		  With Chain of Responsibility (CoR) pattern you can divide the steps into multiple separate classes or methods. Each class will perform its own responsibility and pass the outcome or data to next class in the chain. Each can be reordered and maintained separately. The implementation is also very simple, which can be achieved using single-linked list. Each next step will have a pointer to its next step and so forth. For any step there is no requirement to have the reference to the next step. It can either handle it or break the chain which will finish the processing.
+	- ### Command Pattern
+		- **Problem**
+		  How can we use all the request parameters to a service/REST API as a standalone entity with its context and other related data? Let's imagine a REST API client that makes requests to external systems. We can call request methods directly, in each caller methods. But this will bring performance issues if we use it the same way in distributed environment. If we start using it in an event driven service, how can we exchange the requests between system components in a reusable and self-contained object?
+		- **Solution**
+		  Solution for such problem has its name as a command design pattern. It wraps all the request data, context and other related data into an object and lets to perform single responsibility operation over it. Since each command is an independent entity, it can be reused and combined with other patterns like Composite pattern or Chain of Responsibility. One of the popular use cases are GUI applications where each mouse click or keyboard press can be handled using Command pattern. Also, in text editor or database transactions, where each command besides main operation can provide undo/rollback operation.
+		- **Pattern components**
+			- **Command**: main interface. There can be also a base class that contains all the boilerplate common fields and methods.
+			- **Concrete command**: implementation of the Command that performs main operation. The command class should be very light in scope of SRP and OCP to ovoid complexity.
+			- **Sender**: the owner of the command that initiates the command operation. It does not know any specific implementation and operates using only command contract.
+			- **Receiver**: delegated service that perform the main business logic. Mostly the command wraps the operation of the receiver, since by itself command does not perform any business operations.
+			- **Client**: the creator of the concrete command. Client is the only who configures the relationships between command and sender/receiver and  who knows about concrete commands and manages them.
