@@ -1,0 +1,10 @@
+## How Gitlab runner communicate with Gitlab?
+	- Runners communicate with GitLab over HTTPS, entirely through connections initiated from the Runner to GitLab and never in reverse. The advantage here is that you can install a Runner behind a firewall and as long as the Runner has outbound access to GitLab.com it will work. From there, it really doesn’t matter which executor you use (Shell, Docker, etc).
+	- This is how Gitlab runner works using AWS as example
+		- **Outbound Connections**: Runners on a private subnet in AWS can be configured to have outbound internet access using a NAT Gateway or a NAT instance. This allows the runners to initiate connections to the GitLab server (or any other external resource), even though they cannot be directly reached from the internet.
+		- **Polling Mechanism**: GitLab doesn’t need to initiate a connection to the runners. Instead, the runners are constantly polling the GitLab server for jobs. When you push code or trigger a CI/CD job, the GitLab server queues the job. The runner, during its next poll, picks up the job and executes it. The results, logs, and status are then sent back to the GitLab server by the runner.
+		- **Security and Network Configuration**:
+			- The runners will need security group rules that allow outbound connections, typically to GitLab’s IP on port 443 (HTTPS).
+			- A route in the private subnet’s route table should direct internet-bound traffic to a NAT Gateway or NAT instance, which is usually located in a public subnet.
+			- The NAT device allows the runners in the private subnet to initiate outbound IPv4 traffic to the internet, while preventing unsolicited inbound traffic from reaching them.
+		- This architecture allows the runners to remain isolated and secure in a private subnet while still being able to execute jobs from the GitLab server. The GitLab server doesn’t directly “reach into” the private subnet; instead, the runners reach out to the GitLab server.
