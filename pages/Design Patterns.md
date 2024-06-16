@@ -72,8 +72,8 @@
 	  collapsed:: true
 		- **Problem**
 		  Generating huge amount of objects at run-time can blow up the RAM memory. Moreover, if the object contains values that are repeated in each object, then it would be better to store them somewhere an reuse or refer to the common data instead of Copy/Past-ing them. For example:
-			- **Rendering rows of table**: instead of creating each sell for with value, it is better to reuse the cell to generate the dynamic content
-			- **HTTP connection**: opening new connection every time you send the packet of data to destination can beat the performance of the system. Instead we can keep the same connection and reuse for all packet until we finish the upload.
+			- **Rendering rows of table**: instead of creating each sell for table with a value, it is better to reuse the cell to generate the dynamic content
+			- **HTTP connection**: opening new connection every time to send the data to destination, can beat the performance of the system. Instead we can keep the same connection and reuse it to send other data until we finish the upload.
 		- **Solution**
 		  Flyweight pattern can be used to save RAM memory and reuse the pool of objects for multiple usages. It has similarity with Singleton pattern, the difference is in the number of instances. It is better to use it mostly to solve the problems with memory and to increase the performance of the system by saving it.
 		- **Pattern components**
@@ -95,6 +95,7 @@
 		- **Solution**
 		  With Chain of Responsibility (CoR) pattern you can divide the steps into multiple separate classes or methods. Each class will perform its own responsibility and pass the outcome or data to next class in the chain. Each can be reordered and maintained separately. The implementation is also very simple, which can be achieved using single-linked list. Each next step will have a pointer to its next step and so forth. For any step there is no requirement to have the reference to the next step. It can either handle it or break the chain which will finish the processing.
 	- ### Command Pattern
+	  collapsed:: true
 		- **Problem**
 		  How can we use all the request parameters to a service/REST API as a standalone entity with its context and other related data? Let's imagine a REST API client that makes requests to external systems. We can call request methods directly, in each caller methods. But this will bring performance issues if we use it the same way in distributed environment. If we start using it in an event driven service, how can we exchange the requests between system components in a reusable and self-contained object?
 		- **Solution**
@@ -105,3 +106,8 @@
 			- **Sender**: the owner of the command that initiates the command operation. It does not know any specific implementation and operates using only command contract.
 			- **Receiver**: delegated service that perform the main business logic. Mostly the command wraps the operation of the receiver, since by itself command does not perform any business operations.
 			- **Client**: the creator of the concrete command. Client is the only who configures the relationships between command and sender/receiver and  who knows about concrete commands and manages them.
+	- ### Iterator Pattern
+		- **Problem**
+		  Sometimes just looping over the objects might not be enough. Instead you want to delegate looping to other object that could manage internal state. For example, there might be a case that while looping over the collection you want to remove the element and keep looping or replace the object in a slice. Or even you would want to allow concurrent modification of the slice or maps while looping it.
+		- **Solution**
+		  You can utilize so called iterator pattern that facilitates looping and changing the collection objects. Separate object which is called an iterator will be responsible for looping over it and manage internal state. By using current value you can access the current value of iterator. Iterator also provides the end of the loop or flag to identify is there a next value.
