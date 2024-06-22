@@ -107,7 +107,22 @@
 			- **Receiver**: delegated service that perform the main business logic. Mostly the command wraps the operation of the receiver, since by itself command does not perform any business operations.
 			- **Client**: the creator of the concrete command. Client is the only who configures the relationships between command and sender/receiver and  who knows about concrete commands and manages them.
 	- ### Iterator Pattern
+	  collapsed:: true
 		- **Problem**
 		  Sometimes just looping over the objects might not be enough. Instead you want to delegate looping to other object that could manage internal state. For example, there might be a case that while looping over the collection you want to remove the element and keep looping or replace the object in a slice. Or even you would want to allow concurrent modification of the slice or maps while looping it.
 		- **Solution**
 		  You can utilize so called iterator pattern that facilitates looping and changing the collection objects. Separate object which is called an iterator will be responsible for looping over it and manage internal state. By using current value you can access the current value of iterator. Iterator also provides the end of the loop or flag to identify is there a next value.
+	- ### Mediator Pattern
+		- **Problem**
+		  collapsed:: true
+		  You have components that need to exchange data between other components. Setting each component to be aware of each other, will make the system complex when the number of components grow. It makes components strongly coupled and whenever the components are added or removed dynamically, you have to transfer this knowledge to each of them. For example:
+			- **Chat system**: each user is added and removed dynamically from the room. Making each user aware of other user will force to loop over one to send/receive message or join/remove the user.
+			- **CICD Runner**: submitting a job to a runner directly will not be balanced and it becomes client's responsibility. Knowledge of each other makes it tightly coupled and less scalable.
+			- **Aircrafts**: communication between each flying aircraft makes it risky for pilots planning to land the aircraft. Updating information between each other constantly makes it unreliable because the communication can be lost or message delivery occur with latency. This makes landing catastrophic if communication is lost.
+		- **Solution**
+		  Using mediator pattern we can create a central system that acts as a message broker to all components. All communications are done through one system, which makes them loosely coupled between each other. Mediator is aware of all the components and their interactions between each other. For chat system separate room server will act as user manager and message broker, CICD runner server will register runners and distribute their job and in case of aircraft, separate control tower will make it easier for pilots to manage landing and flying directions.
+		- **Pattern components**
+			- **Mediator**
+			  Composition object that facilitates communication between each component. It has knowledge of all the components and can even manage their lifecycle.
+			- **Component**
+			  The component is the main part of the system that performs the business logic and which has zero knowledge about other components. Each component has a reference to mediator, but not to other components.
