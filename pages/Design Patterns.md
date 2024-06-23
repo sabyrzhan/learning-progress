@@ -113,6 +113,7 @@
 		- **Solution**
 		  You can utilize so called iterator pattern that facilitates looping and changing the collection objects. Separate object which is called an iterator will be responsible for looping over it and manage internal state. By using current value you can access the current value of iterator. Iterator also provides the end of the loop or flag to identify is there a next value.
 	- ### Mediator Pattern
+	  collapsed:: true
 		- **Problem**
 		  collapsed:: true
 		  You have components that need to exchange data between other components. Setting each component to be aware of each other, will make the system complex when the number of components grow. It makes components strongly coupled and whenever the components are added or removed dynamically, you have to transfer this knowledge to each of them. For example:
@@ -126,3 +127,16 @@
 			  Composition object that facilitates communication between each component. It has knowledge of all the components and can even manage their lifecycle.
 			- **Component**
 			  The component is the main part of the system that performs the business logic and which has zero knowledge about other components. Each component has a reference to mediator, but not to other components.
+	- ### Memento Pattern
+		- **Problem**
+		  You want to save the states of the object after change in order to revert later. At the same time you want to fully encapsulate state data so the owner have access to it. Its applications can be, text editors to Undo/Redo the change, rollback to previous record in DB transactions, make database snapshots etc.
+		- **Solution**
+		  Memento pattern stores the snapshot of the data and lets to revert to it. Most of the time you make it immutable, so you pass the data you want to save as constructor parameter. Caretaker can be used to fully delegate the state management like storing and restoring the state.
+		- **Pattern components**
+			- **Memento**
+			  Value class that stores the state. Can be directly 1-to-1 mapped fields or object itself
+			- **Caretaker**
+			  Delegate class that manages the state (store, restore state)
+			- **Origin**
+			  Owner of the state. For example, in case of text editor - editor is the owner of the state, database transaction - persistence manager is the owner. State management is done via caretaker or caretaker acts as the state provider externally.
+-
