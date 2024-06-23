@@ -131,7 +131,7 @@
 		- **Problem**
 		  You want to save the states of the object after change in order to revert later. At the same time you want to fully encapsulate state data so the owner have access to it. Its applications can be, text editors to Undo/Redo the change, rollback to previous record in DB transactions, make database snapshots etc.
 		- **Solution**
-		  Memento pattern stores the snapshot of the data and lets to revert to it. Most of the time you make it immutable, so you pass the data you want to save as constructor parameter. Caretaker can be used to fully delegate the state management like storing and restoring the state.
+		  Memento pattern stores the snapshot of the data and lets to revert to it. Most of the time you make it immutable, so you pass the data you want to save as constructor parameter. Caretaker can be used to fully delegate the state management like storing and restoring the state. Also, keep in mind memento is just the storage and does not provide additional functions for state modifications.
 		- **Pattern components**
 			- **Memento**
 			  Value class that stores the state. Can be directly 1-to-1 mapped fields or object itself
