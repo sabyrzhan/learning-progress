@@ -167,15 +167,15 @@
 			- **Concrete state**
 			  Specific state implementation. Each implementation is light and handles the required behavior.
 	- ### Strategy Pattern
-	  collapsed:: true
 		- **Problem**
 		  We can have a case we have to use different algorithms to solve the same problem. For example, to increase the speed or way of processing data. Moreover we have to change it at run-time based on the user request. The data that we provide does not change, but the algorithm does.
 		- **Solution**
-		  We can provide an interface which all algorithm classes must implement. Main application or context can swap the algorithm at run-time. Specific algorithm is provided by the client, so the the context is not aware about the implementations. It only knows the interface.
+		  We can provide an high-level interface which all specific algorithm classes must implement. Main application or context can swap the algorithm at run-time. Specific algorithm is provided by the client, so the the context is not aware about the implementations. It only knows the interface.
 		- **Pattern components**
 			- **Context**
 			  Main app or strategy owner that has a reference to specific algorithm. Strategy is swapped in this class.
 			- **Strategy**
-			  Base interface that other algorithms must implement. Context is only aware about this interface only.
+			  High-level base interface that other algorithms must implement. Context is only aware about this interface only.
 			- **Concrete strategy**
 			  Specific implementation of the strategy interface. It is chosen by action type and by the client.
+-
