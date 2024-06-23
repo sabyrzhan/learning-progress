@@ -128,6 +128,7 @@
 			- **Component**
 			  The component is the main part of the system that performs the business logic and which has zero knowledge about other components. Each component has a reference to mediator, but not to other components.
 	- ### Memento Pattern
+	  collapsed:: true
 		- **Problem**
 		  You want to save the states of the object after change in order to revert later. At the same time you want to fully encapsulate state data so the owner have access to it. Its applications can be, text editors to Undo/Redo the change, rollback to previous record in DB transactions, make database snapshots etc.
 		- **Solution**
@@ -139,4 +140,13 @@
 			  Delegate class that manages the state (store, restore state)
 			- **Origin**
 			  Owner of the state. For example, in case of text editor - editor is the owner of the state, database transaction - persistence manager is the owner. State management is done via caretaker or caretaker acts as the state provider externally.
--
+	- ### Observer Pattern
+		- **Problem**
+		  You have an object that changes its state dynamically. At the same time you have objects that must listen to object changes. Also those objects must be able to watch and un-watch the changes at any time.
+		- **Solution**
+		  Observer lets to subscribe listeners to subject changes. The subject provides 2 methods like `subscribe` and `unsubscribe` for observers. And listener provides single method: `update` or `notify`, which invokes specific actions when event occurs.
+		- **Pattern components**
+			- **Observer/Subscriber**
+			  Object that monitors the changes in subject. Provides mostly single method like `notify` or `update` to perform action when event occurs.
+			- **Observed/Publisher**
+			  Main subject when its state changes, notifies subscribers. Provides mostly methods like `subscribe` and `unsubscribe` for observers.
