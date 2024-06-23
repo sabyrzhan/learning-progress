@@ -167,6 +167,7 @@
 			- **Concrete state**
 			  Specific state implementation. Each implementation is light and handles the required behavior.
 	- ### Strategy Pattern
+	  collapsed:: true
 		- **Problem**
 		  We can have a case we have to use different algorithms to solve the same problem. For example, to increase the speed or way of processing data. Moreover we have to change it at run-time based on the user request. The data that we provide does not change, but the algorithm does.
 		- **Solution**
@@ -178,4 +179,15 @@
 			  High-level base interface that other algorithms must implement. Context is only aware about this interface only.
 			- **Concrete strategy**
 			  Specific implementation of the strategy interface. It is chosen by action type and by the client.
+	- ### Template method Pattern
+	  collapsed:: true
+		- **Problem**
+		  You have a fat method that processes the data of various document types like Word, PDF, CSV etc. The logic has common functionalities for different types, but has many if-else statements for some specific cases. The logic becomes unscalable when you start adding many other document types. You have to add additional if-else statements and create similar logic.
+		- **Solution**
+		  With template method pattern you can extract the specific functions to abstract methods to make them overridable. In the main method you call those abstract functions in specific order. The main function is left final and the owner class will become abstract. Making the all methods as abstract is not required though. You can make them as overridable, but with default functionality. It is very similar to Strategy pattern, but the difference is algorithm is chosen at compile time, whereas in Strategy it is swapped at run-time.
+		- **Pattern components**
+			- **Abstract class**
+			  Main method owner class that calls all the abstract or overridable methods as steps in specific order.
+			- **Specific classes**
+			  Classes that extend the abstract class and implements specific functions.
 -
