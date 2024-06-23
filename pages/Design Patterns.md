@@ -141,6 +141,7 @@
 			- **Origin**
 			  Owner of the state. For example, in case of text editor - editor is the owner of the state, database transaction - persistence manager is the owner. State management is done via caretaker or caretaker acts as the state provider externally.
 	- ### Observer Pattern
+	  collapsed:: true
 		- **Problem**
 		  You have an object that changes its state dynamically. At the same time you have objects that must listen to object changes. Also those objects must be able to watch and un-watch the changes at any time.
 		- **Solution**
@@ -150,3 +151,17 @@
 			  Object that monitors the changes in subject. Provides mostly single method like `notify` or `update` to perform action when event occurs.
 			- **Observed/Publisher**
 			  Main subject when its state changes, notifies subscribers. Provides mostly methods like `subscribe` and `unsubscribe` for observers.
+	- ### State Pattern
+		- **Problem**
+		  Throughout the lifecycle, application can transition to multiple states. In each state it can behave differently. To solve the state management we can use `if-else` or `switch` statements to handle the operations. But this becomes unscalable when we introduce more and more states and application becomes dynamic and sensitive to states.
+		- **Solution**
+		  The State pattern delegates each state behavior to its own class. Centralized context class owns the state, but at the same time each state class is able to change the state using context. There must be a separate base interface and abstract class that all the states extend and with default implementation if needed. This is to allow the context to change the state without knowing specific state implementations.
+		- **Pattern components**
+			- **Context**
+			  State owner or state machine. This can be totally separate class or client that owns and manages the state.
+			- **State**
+			  Base interface that all state classes implement. The interface must be simple and generally contains single method for handling the behavior. The method can accept the context in order to change the state.
+			- **Base state**
+			  Although not needed, but can also be used to set default methods for all the states.
+			- **Concrete state**
+			  Specific state implementation. Each implementation is light and handles the required behavior.
