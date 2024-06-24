@@ -190,4 +190,17 @@
 			  Main method owner class that calls all the abstract or overridable methods as steps in specific order.
 			- **Specific classes**
 			  Classes that extend the abstract class and implements specific functions.
--
+	- ### Visitor Pattern
+		- **Problem**
+		  You have a list of classes that implement the same interface. Then you have a task to perform object specific actions. The standard way would be to loop over each one and check each one with `instanceOf` and then perform the action. This will work for small amounts of subclasses like 2-5. But when it gets more, maintaining cost also increases. Because you have to take into account each `if-else` or `switch` statements performed on all the objects in order not to miss.
+		- **Solution**
+		  We can solve such problem with Visitor pattern using Double Dispatch technique. Instead of performing action on each object ourself, we can let object to accept the delegate (visitor object). We will force objects to implement separate interface that accepts visitor parameter. This way visitor will be aware about each specific class to perform logic on them.
+		- **Pattern components**
+			- **Visitor**
+			  Visitor interface that can be aware about each element that it processes. It can have many overloaded methods to accept each of them.
+			- **Concrete Visitor**
+			  Concrete visitor implementation
+			- **Element**
+			  Elements that accept visitor. Base interface or abstract class for subclasses.
+			- **Concrete element**
+			  Concrete implementation of the element which accepts the visitor. Thanks to Double dispatch this object will be redirected to visitor.
