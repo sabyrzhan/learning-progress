@@ -4,3 +4,6 @@
 - ### Open-Closed Principle (OCP)
 	- Object or module must be open for extension and closed for modification
 	  If there is a new requirement to add or update the classes it is better to extend for example using extra design patterns. For example, let's say we have products in our store. We can add product filter functionality by creating separate FilterSpec interface with `isSatisfiedBy(product)` signature. Here we are using Specification design pattern for that. Whenever we want to add new filter we just create new one by implementing FilterSpec. More over we can create CompositeFilter using [[Composite Pattern]] to combine multiple filter and apply as a single unit.
+- ### Liskov Substitution Principle (LSP)
+	- Child classes must be substitutable without changing the parent class behavior when state changes.
+	  Popular example of the violation of the LSP is Rectangle-Square problem. When we have rectangle and square which extends it, square changes rectangle's behavior by mutating both width and height fields when one of the field is changed. In the end this produces different results when other common methods outcomes depend on these fields. The correct approach would be to separate the fields into their own struct, so they affect their own behavior not common the ones.
