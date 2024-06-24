@@ -1,4 +1,5 @@
 ## [[GoF Patterns]]
+collapsed:: true
 	- ### Strategy pattern
 	  collapsed:: true
 		- Used to define multiple algorithms that differ only in behavior and use them interchangeably at run-time. It is similar to Dependency Injection but the difference is - DI is used for code coupling but not for interchanging implementations at run-time.
@@ -35,7 +36,7 @@
 		  *Decouple abstraction from implementation*, *strong encapsulation*, *separate hierarchy*
 		- **Resources**:
 			- https://www.pentalog.com/blog/design-patterns/bridge-design-patterns/
-	- ### Composite Pattern
+	- ### [[Composite Pattern]]
 	  collapsed:: true
 		- **Problem**:
 		  You have a set of objects of similar type. By using the same contract you can perform operation on each of them. But instead of that, you would like the functionality that would perform the same operation on all of them using the same contract. For example:
@@ -191,6 +192,7 @@
 			- **Specific classes**
 			  Classes that extend the abstract class and implements specific functions.
 	- ### Visitor Pattern
+	  collapsed:: true
 		- **Problem**
 		  You have a list of classes that implement the same interface. Then you have a task to perform object specific actions. The standard way would be to loop over each one and check each one with `instanceOf` and then perform the action. This will work for small amounts of subclasses like 2-5. But when it gets more, maintaining cost also increases. Because you have to take into account each `if-else` or `switch` statements performed on all the objects in order not to miss.
 		- **Solution**
@@ -204,3 +206,14 @@
 			  Elements that accept visitor. Base interface or abstract class for subclasses.
 			- **Concrete element**
 			  Concrete implementation of the element which accepts the visitor. Thanks to Double dispatch this object will be redirected to visitor.
+- ## [[Enterprise patterns]]
+	- ### Specfication Pattern
+		- **Problem**
+		  You are adding a new filter to your new products website. Your product has multiple parameters like size, color, category etc. As a starting point you added `filterBySize` filter. Then you added `filterByColor`. After that you see you have to also provide combinations of these filters like `flterByColorAndSize`. More parameters you add, more combinations have to be created. Also every time you add them, you also have to change the original filter functionality since it also has to take new parameters into account. How can you make the rules that can live separately, but also be extended without altering the domain functionality?
+		- **Solution**
+		  Specification design pattern states to create separate interface `Specification` with signature `isSatisfiedBy(data) bool`. All your concrete rules must implement this interface. Such a simple interface can be used to solve complex conditional workflows like above by creating separate concrete specifications. It can be more powerful when you combine it with other design patterns like [[Composite Pattern]]. So you can apply chain of rules on subject as a single unit.
+		- **Pattern components**
+			- **Specification**
+			  Base interface of your domain rules. Must have single signature `isSatisfiedBy(data) bool`.
+			- **Concrete specification**
+			  Concrete `Specification` implementation of the specification. Can also be a composite to aggregate the rules.

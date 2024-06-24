@@ -1,0 +1,6 @@
+### Single Responsibility Principle (SRP)
+	- Object must have only single responsibility and have only one reason to change.
+	  For example it is a bad design to mix the data management functionality with data persistence functionality. Better to separate into 2 different classes, where persistency will operate on data management class.
+- ### Open-Closed Principle (OCP)
+	- Object or module must be open for extension and closed for modification
+	  If there is a new requirement to add or update the classes it is better to extend for example using extra design patterns. For example, let's say we have products in our store. We can add product filter functionality by creating separate FilterSpec interface with `isSatisfiedBy(product)` signature. Here we are using Specification design pattern for that. Whenever we want to add new filter we just create new one by implementing FilterSpec. More over we can create CompositeFilter using [[Composite Pattern]] to combine multiple filter and apply as a single unit.
