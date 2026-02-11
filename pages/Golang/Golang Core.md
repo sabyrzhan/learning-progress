@@ -1,4 +1,21 @@
-## [[Ducktyping]]
+## [[Type definition vs Type alias]]
+	- ```
+	  type int1 = int // Type alias
+	  type int2 int   // Type definition
+	  ```
+	- **Type alias** is just the second name. You can use the alias and underlying type interchangably
+	- **Type definition** is another type. To assign value with underlying type you have to downcast it.
+		- One thing you can do with type definition is defining new operations/methods:
+		  ```
+		  type int2 int
+		  func (i int2) ToString() string {
+		   return fmt.Sprintf("%d", i)
+		  }
+		  
+		  var i2 int2
+		  fmt.Println(i2.ToString())
+		  ```
+- ## [[Ducktyping]]
 	- You can ducktype functions or methods using `interface{}`. You can restrict your parameters to structs as well as to interfaces, though you cannot conbine them:
 	  ```
 	  func DuckType1(data interface{  Function1() string; Function2() int }) {
